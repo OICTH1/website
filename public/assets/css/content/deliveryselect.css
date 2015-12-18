@@ -1,0 +1,196 @@
+*{
+  font-size: 22px;
+}
+
+/***** コンテンツ全体 *****/
+html,body{
+    height: 95%;
+    box-sizing: border-box;
+}
+body{
+    width: 1000px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.header{
+    height: 20%;
+    box-sizing: border-box;
+}
+.contents{
+    padding: 10px 10px 10px 10px;
+    height: 80%;
+    box-sizing: border-box;
+}
+
+/***** コンテンツ全体 *****/
+
+/*******見出しの所****/
+.cartheading,.deliveryheading {
+    font-size: 30px;
+    float: left;
+    padding: 6px 0;
+    border: solid 1px;
+    width: 100%;
+    text-align : center;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+/******ご注文内容部分*******/
+.cart{
+    float: left;
+    border: solid 1px;
+    width: 100%;
+    box-sizing: border-box;}
+
+.cartin{
+    float: left;
+    font-size: 22px;
+    width: 100%;
+    height: 35px;
+    padding:  5px 20px;
+    border-bottom: solid 1px;
+    box-sizing: border-box;
+}
+
+.name{
+    float: left;
+    width: 60%;
+    height: 100%;
+    text-align: center;
+}
+
+.num{
+    float: left;
+    width: 10%;
+    height: 100%;
+}
+
+.money{
+    float: left;
+    width: 30%;
+    height: 100%;
+    text-align: right
+}
+
+/*合計金額*/
+.summoney{
+    float: left;
+    width: 100%;
+    padding: 5px 0;
+    font-size: 32px;
+    text-align: right;
+    box-sizing: border-box;
+}
+
+.sum{
+    font-size: 32px;
+    width: 20%;
+    float: right;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.sum > span{
+  font-size: 32px;
+}
+
+/*住所洗濯フォーム*/
+.select-address{
+  table-layout: fixed;
+  border: solid 1px;
+  width: 100%;
+}
+
+/*ラジオボタン用ラベル*/
+.select-address input{
+
+}
+
+
+.select-address td{
+  border: solid 1px;
+}
+.select-address td:nth-child(1){
+  width: 40px;
+  text-align: center;
+}
+
+/*選択詳細*/
+.select-address td:nth-child(2){
+  padding: 10px;
+}
+
+/*選択詳細　タイトル*/
+.select-address h3{
+  margin: 0;
+}
+/*登録住所　詳細*/
+#registered-address{
+  padding-left: 1em;
+}
+
+/***********住所指定欄************/
+.other-form{
+  display: none;
+}
+
+.other-form > div:not(:last-child){
+  margin-bottom: 2.5em;
+}
+.form-label{
+  float: left;
+  min-width: 50%;
+  margin-bottom: 1em;
+}
+
+.form-input{
+  float: left;
+  margin-left: 2em;
+}
+
+.form-describe{
+  margin-left: 1em;
+  font-size: 14px;
+  text-decoration: underline;
+  clear: both;
+}
+
+/*********確定戻る***********/
+.confirmation {
+    padding: 20px 0px;
+    float: left;
+    width: 30%;
+    margin: 0% 35% 0% 35%;
+    text-align : center;
+}
+
+.confirmation>input{
+    font-size: 32px;
+    background-color: white;
+    border: solid 1px black;
+}
+
+.biglink{
+    padding-top: 7px;
+    display: block;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+.biglink:hover{
+    background-color: chartreuse;
+}
+.back{
+    float: left;
+    width: 20%;
+    margin: 0% 40% 0% 40%;
+    text-align : center;
+    border: solid 1px;
+}
+.back a{
+    font-size: 32px;
+}
+/*********確定戻る***********/

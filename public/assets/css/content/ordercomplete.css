@@ -1,0 +1,68 @@
+/***** コンテンツ全体 *****/
+html,body{
+    height: 95%;
+    box-sizing: border-box;
+}
+body{
+    width: 1000px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.header{
+    height: 20%;
+    box-sizing: border-box;
+}
+.contents{
+    padding: 10px 10px 10px 10px;
+    height: 80%;
+    box-sizing: border-box;
+}
+
+/***** コンテンツ全体 *****/
+/*******メッセージ部分*******/
+.inner{
+  padding-top: 40px;
+}
+.message{
+    width: 100%;
+    height: 300px;
+    border: solid 1px;
+    text-align: center;
+}
+.messagein{
+    font-size: 35px;
+    box-sizing: border-box;
+}
+.where{
+    font-size: 26px;
+    padding-top: 2px;
+    box-sizing: border-box;
+}
+.where>p>a{
+    font-size: 30px;
+    color: red;
+}
+/*******メッセージ部分*******/
+/*******Topページへ戻る部分*******/
+
+.top{
+    font-size: 28px;
+    float: left;
+    width: 30%;
+    margin: 5% 35% 2% 35%;
+    text-align : center;
+    border: solid 1px;
+}
+
+.biglink{
+    padding: 7px;
+    display: block;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+.biglink:hover{
+    background-color: chartreuse;
+}
+/*******Topページに戻る部分*******/

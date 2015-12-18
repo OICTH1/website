@@ -1,0 +1,61 @@
+<?php echo Asset::css('content/itemdetail.css')?>
+
+<div class="menu">
+  <div class="menuheading">
+    メニュー
+  </div>
+  <div class="menuin">
+          <div class="menuname"><?php echo $detail['item_name']?></div>
+    <div class="menuleft">
+      <?php echo Asset::img($detail['img_path']); ?>
+    </div>
+    <div class="menuright">
+              <div class="pricelist">
+                  <?php if($detail['prices']['unit_price'] != '0'):?>
+                      <div class="price">￥<span id="price"><?php echo $detail['prices']['unit_price']?></span></div>
+                  <?php else:?>
+                    <div class="price-sml">S￥<span id="price_s"><?php echo $detail['prices']['unit_price_s']?></span> M￥<span id="price_m"><?php echo $detail['prices']['unit_price_m']?></span> L￥<span id="price_l"><?php echo $detail['prices']['unit_price_l']?></span></div>
+                <?php endif;?>
+              </div>
+              <div class="zei">(税込)</div>
+      <div class="description"><?php echo $detail['explanatory']?></div>
+    </div>
+
+
+    <?php if(!($detail['prices']['unit_price'] != '0')):?>
+    <div class="size">
+      <div class="sizeheading">
+        サイズ
+      </div>
+      <div class="sizein">
+              <label><div class="s">					Sサイズ<br><input type="radio" name="size" value="_s">
+        </div></label>
+              <label><div class="m">					Mサイズ<br><input type="radio" name="size" value="_m">
+        </div></label>
+              <label><div class="l">					Lサイズ<br><input type="radio" name="size" value="_l">
+        </div></label>
+      </div>
+    </div>
+    <?php endif;?>
+    <div class="select">
+      <div class="selectleft">
+        個数<select name="quantity" id="quantity" >
+          <option value="1" checked>1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </div>
+      <div class="selectcenter">
+              ご注文金額　<span id="money">5000</span>円
+      </div>
+      <div class="selectright">
+        <span>カートへ入れる</span>
+      </div>
+</div>
+</div>
+<div class="list">
+  <a href="" title="" class="biglink">一覧へ戻る</a>
+</div>
+<?php echo Asset::js('content/itemdetail.js')?>

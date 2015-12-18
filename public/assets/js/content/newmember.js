@@ -1,0 +1,1 @@
+    jQuery("#formin").validationEngine();
