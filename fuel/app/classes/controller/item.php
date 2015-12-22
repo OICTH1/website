@@ -32,7 +32,7 @@ class Controller_Item Extends Controller_Page
         $this->template->content = View::forge('content/itemlist',$data);
     }
 
-    public function action_detail($item_id)
+    public function action_detail($item_id,$order_id = null)
     {
         $item = Model_Item::find($item_id);
         /*if(!empty($item)){
@@ -50,6 +50,7 @@ class Controller_Item Extends Controller_Page
             ),
             'explanatory' => $item->explanatory
         );
+        $data['order_id'] = $order_id;
         $this->template->content = View::forge('content/itemdetail',$data);
     }
 }

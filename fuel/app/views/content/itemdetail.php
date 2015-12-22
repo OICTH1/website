@@ -20,8 +20,11 @@
               <div class="zei">(税込)</div>
       <div class="description"><?php echo $detail['explanatory']?></div>
     </div>
-
-    <?php echo Form::open(array('action' => 'index.php/cart/add', 'method' => 'post'))?>
+    <?php if(isset($order_id)):?>
+        <?php echo Form::open(array('action' => 'index.php/cart/edit/' . $order_id, 'method' => 'post'))?>
+    <?php else :?>
+        <?php echo Form::open(array('action' => 'index.php/cart/add', 'method' => 'post'))?>
+    <?php endif;?>
     <?php echo Form::hidden('item_id',$detail['item_id'])?>
     <?php if(!($detail['prices']['unit_price'] != null)):?>
     <div class="size">
@@ -53,7 +56,11 @@
               <input type="hidden" id="form-money" name="money">
       </div>
       <div class="selectright">
-        <input type="submit" value="カートへ入れる" >
+        <?php if(isset($order_id)):?>
+            <input type="submit" value="変更" >
+        <?php else :?>
+            <input type="submit" value="カートへ入れる" >
+        <?php endif;?>
       </div>
       <?php echo Form::close()?>
 </div>
