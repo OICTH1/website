@@ -1,5 +1,5 @@
-<?php echo Asset::css('contents/newmember.css') ?>
-<?php echo Asset::css('contents/validationEngine.jquery.css') ?>
+<?php echo Asset::css('content/newmember.css') ?>
+<?php echo Asset::css('content/validationEngine.jquery.css') ?>
 
 <div class="formheading">
     新規会員登録
