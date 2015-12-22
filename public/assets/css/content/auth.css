@@ -17,7 +17,7 @@
 .loginform{
     border: solid 1px;
     box-sizing: border-box;
-    padding: 30px 20px 30px 60px;
+    padding: 30px 20px 30px 80px;
 }
 
 #form-password,#form-mail{
@@ -35,9 +35,32 @@
 .form{
     font-size: 30px;
     box-sizing: border-box;
+    width: 100%;
+    float: none;
+}
+.form form{
+  float: none;
 }
 
+.formin{
+  width: 100%;
+  box-sizing: border-box;
+  float: none;
+}
 
+.formtitle{
+  width: 35%;
+  float: left;
+  box-sizing: border-box;
+  padding: 20px 0px;
+}
+
+.forminput{
+  width: 60%;
+  float: left;
+    box-sizing: border-box;
+      padding: 20px 0px;
+}
 
 .login-btn{
     font-size: 28px;
@@ -46,6 +69,7 @@
     text-align: center;
     padding: 15px;
     margin: 0 auto;
+    clear: both;
 }
 
 .login-btn > label{
