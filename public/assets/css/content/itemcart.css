@@ -1,0 +1,148 @@
+
+html,body{
+    height: 95%;
+    box-sizing: border-box;
+}
+body{
+    width: 1000px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.header{
+    height: 20%;
+    box-sizing: border-box;
+}
+.contents{
+    padding: 10px 10px 10px 10px;
+    height: 80%;
+    box-sizing: border-box;
+}
+
+/***** コンテンツ全体 *****/
+/******カート部分*******/
+/*見出しの所*/
+.cartheading {
+    font-size: 28px;
+    float: left;
+    padding: 6px 0;
+    border: solid 1px;
+    width: 100%;
+    text-align : center;
+    box-sizing: border-box;
+}
+
+.cart{
+    float: left;
+    width: 100%;
+    font-size: 21px;
+    box-sizing: border-box;
+    border: solid 1px;
+    padding: 0% 5%;
+    padding-top: 3%;
+    margin-top: 15px;
+}
+
+.cartin{
+    float: left;
+    width: 100%;
+    height:120px;
+    margin-bottom: 3%;
+    border: solid 1px;
+    box-sizing: border-box;
+}
+
+.name{
+    float: left;
+    width: 100%;
+    height: 70%;
+    padding: 0 4%;
+    padding-top: 4%;
+    border-bottom: solid 1px;
+    box-sizing: border-box;
+}
+
+.num{
+    float: left;
+    width: 40%;
+    height: 30%;
+    padding-top: 10px;
+    text-align: right;
+    box-sizing: border-box;
+
+}
+
+.money{
+    float: left;
+    width: 30%;
+    height: 30%;
+    padding-top: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.change{
+    float: left;
+    width: 14.0%;
+    margin: 0.5%;
+    text-align : center;
+    border: solid 1px;
+    box-sizing: border-box;
+}
+
+.delete{
+    float: left;
+    width: 14.0%;
+    margin: 0.5%;
+    text-align : center;
+    border: solid 1px;
+    box-sizing: border-box;
+}
+
+span.biglink{
+    font-size: 20px;
+    display: block;
+    padding: 3px 0px;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+span.biglink:hover{
+    background-color: chartreuse;
+}
+/***********カートの下の合計金額************/
+.summoney{
+    font-size: 28px;
+    float: left;
+    padding-top: 8px;
+    border: solid 1px;
+    width: 100%;
+    height: 6%;
+    margin-top: 10px;
+    padding-right: 20px;
+    text-align : right;
+    box-sizing: border-box;
+}
+/***********カートの下の合計金額************/
+/*********配達先選択へ進む*******/
+a.biglink{
+    padding-top: 7px;
+    display: block;
+    padding: 8px 0px;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+a.biglink:hover{
+    background-color: chartreuse;
+}
+
+.deliverybutton{
+    font-size: 30px;
+    float: left;
+    width: 40%;
+    margin: 3% 30% 5% 30%;
+    text-align : center;
+    border: solid 1px;
+}
+/*********配達先選択へ進む*******/

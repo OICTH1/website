@@ -16,4 +16,5 @@ function calcMoney(){
     }
     var unit_price = $('#price' + size).text();
     $('#money').text(unit_price * $('#quantity').val());
+    $('#form-money').val(unit_price * $('#quantity').val());
 }

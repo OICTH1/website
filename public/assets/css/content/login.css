@@ -1,0 +1,102 @@
+/***** コンテンツ全体 *****/
+html,body{
+    height: 95%;
+    box-sizing: border-box;
+}
+body{
+    width: 1000px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.header{
+    height: 20%;
+    box-sizing: border-box;
+}
+.contents{
+    padding: 10px 10px 10px 10px;
+    height: 80%;
+    box-sizing: border-box;
+}
+
+/***** コンテンツ全体 *****/
+
+/*******見出しの所****/
+.loginformheading {
+    font-size: 30px;;
+    float: left;
+    padding: 6px 0;
+    border: solid 1px;
+    width: 100%;
+    text-align : center;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+
+/**********ログインのフォーム**********/
+.loginform{
+    float: left;
+    border: solid 1px;
+    height: 300px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input{font-size: 80%;}
+
+.form{
+    float: left;
+    font-size: 30px;
+    height: 60%;
+    width: 100%;
+    padding: 3% 0% ;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+
+
+.login{
+    float: left;
+    font-size: 28px;
+    height: 20%;
+    width: 20%;
+    text-align: center;
+    border: solid 1px;
+    margin: 3% 40% 2% 40%;
+    box-sizing: border-box;
+}
+.login a{padding-top: 16px;}
+
+/**********ログインのフォーム***********/
+/***********下のボタン***********/
+.newmember{
+    font-size: 28px;
+    float: left;
+    width: 40%;
+    margin: 2% 30% 0% 30%;
+    text-align : center;
+    border: solid 1px;
+}
+
+.top{
+    font-size: 28px;
+    float: left;
+    width: 30%;
+    margin: 2% 35% 2% 35%;
+    text-align : center;
+    border: solid 1px;
+}
+
+.biglink{
+    padding: 9px;
+    display: block;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+.biglink:hover{
+    background-color: chartreuse;
+}
+/***********下のボタン***********/

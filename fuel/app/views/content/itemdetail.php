@@ -11,9 +11,9 @@
     </div>
     <div class="menuright">
               <div class="pricelist">
-                  <?php if($detail['prices']['unit_price'] != '0'):?>
+                 <?php if($detail['prices']['unit_price'] != null ):?>
                       <div class="price">￥<span id="price"><?php echo $detail['prices']['unit_price']?></span></div>
-                  <?php else:?>
+                 <?php else:?>
                     <div class="price-sml">S￥<span id="price_s"><?php echo $detail['prices']['unit_price_s']?></span> M￥<span id="price_m"><?php echo $detail['prices']['unit_price_m']?></span> L￥<span id="price_l"><?php echo $detail['prices']['unit_price_l']?></span></div>
                 <?php endif;?>
               </div>
@@ -21,14 +21,15 @@
       <div class="description"><?php echo $detail['explanatory']?></div>
     </div>
 
-
-    <?php if(!($detail['prices']['unit_price'] != '0')):?>
+    <?php echo Form::open(array('action' => 'index.php/cart/add', 'method' => 'post'))?>
+    <?php echo Form::hidden('item_id',$detail['item_id'])?>
+    <?php if(!($detail['prices']['unit_price'] != null)):?>
     <div class="size">
       <div class="sizeheading">
         サイズ
       </div>
       <div class="sizein">
-              <label><div class="s">					Sサイズ<br><input type="radio" name="size" value="_s">
+              <label><div class="s">					Sサイズ<br><input type="radio" name="size" value="_s" checked>
         </div></label>
               <label><div class="m">					Mサイズ<br><input type="radio" name="size" value="_m">
         </div></label>
@@ -49,10 +50,12 @@
       </div>
       <div class="selectcenter">
               ご注文金額　<span id="money">5000</span>円
+              <input type="hidden" id="form-money" name="money">
       </div>
       <div class="selectright">
-        <span>カートへ入れる</span>
+        <input type="submit" value="カートへ入れる" >
       </div>
+      <?php echo Form::close()?>
 </div>
 </div>
 <div class="list">

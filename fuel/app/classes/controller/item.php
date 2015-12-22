@@ -29,7 +29,7 @@ class Controller_Item Extends Controller_Page
             ));
         }
         $data['item_list'] = $item_list;
-        $this->template->content = Asset::img($item_list[0]['img_path']);
+        $this->template->content = View::forge('content/itemlist',$data);
     }
 
     public function action_detail($item_id)

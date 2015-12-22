@@ -1,0 +1,124 @@
+/***** コンテンツ全体 *****/
+html,body{
+    height: 95%;
+    box-sizing: border-box;
+}
+body{
+    width: 1000px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.header{
+    height: 20%;
+    box-sizing: border-box;
+}
+.contents{
+    padding: 10px 10px 10px 10px;
+    height: 80%;
+    box-sizing: border-box;
+}
+
+/***** コンテンツ全体 *****/
+
+/*******見出しの所****/
+.formheading {
+    font-size: 28px;
+    float: left;
+    padding: 8px 0;
+    border: solid 1px;
+    width: 100%;
+    text-align : center;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+/**********配達先住所部分***********/
+.form{
+    float: left;
+    font-size: 22px;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: solid 1px;
+    box-sizing: border-box;
+}
+
+.formleft{
+    float:  left;
+    height: 100%;
+    width: 40%;
+    text-align: left;
+    font-size: 23.5px;
+    padding-left: 10%;
+    box-sizing: border-box;
+}
+
+.formleftin{
+    padding: 12.6px 0px;
+
+}
+
+.formright{
+    float:  left;
+    height: 100%;
+    width: 60%;
+    font-size: 23.5px;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.formrightin{
+    padding: 12.6px; 0px;
+    width: 100%;
+}
+
+.first_name,.last_name,.first_name_kana,.last_name_kana{
+    width: 20%;
+    height: 100%;
+    text-align: left;
+}
+.last_name,.last_name_kana{
+    padding-right: 40px;
+}
+
+.description{
+    text-align: left;
+    font-size: 23.5px;
+    padding-right: 20px;
+    height: 100%;
+}
+/**********配達先住所部分***********/
+/*********確定戻る***********/
+.confirm{
+    font-size: 30px;
+    float: left;
+    width: 30%;
+    margin: 0% 35% 0% 35%;
+    text-align : center;
+    border: solid 1px;
+}
+
+.modify{
+    font-size: 25px;
+    float: left;
+    width: 20%;
+    margin: 2% 40% 0% 40%;
+    text-align : center;
+    border: solid 1px;
+}
+
+a.biglink{
+    padding-top: 7px;
+    display: block;
+    padding: 8px 0px;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+a.biglink:hover{
+    background-color: chartreuse;
+}
+
+/*********確定戻る***********/
