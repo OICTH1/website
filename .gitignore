@@ -32,3 +32,9 @@ desktop.ini
 /fuel/app/cache/*/*
 /fuel/app/config/crypt.php
 /fuel/app/config/development/db.php
+
+# permissions error
+/fuel/app/logs
+/fuel/app/tmp
+/fuel/app/cache
+/fuel/app/config

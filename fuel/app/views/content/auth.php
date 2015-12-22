@@ -6,12 +6,14 @@
     <div class="loginform">
         <div class="form">
            <?php echo form::open('index.php/auth/login')?>
-            <p>
-                ご登録のメールアドレス<input type="text" name="mail" size="40" id="form-mail">
-            </p>
-            <p>
-                パスワード<input type="password" name="pass" size="40" id="form-password">
-            </p>
+           <div class="formin">
+            <div class="formtitle">ご登録のメールアドレス</div><div class="forminput"><input type="text" name="mail" size="40" id="form-mail">
+          </div>
+        </div>
+          <div class="formin">
+           <div class="formtitle">パスワード</div><div class="forminput"><input type="password" name="pass" size="40" id="form-password">
+           </div>
+         </div>
             <?php if(isset($err)):?>
                 <p id="err-message">
                   メールアドレスまたはパスワードが正しくありません
