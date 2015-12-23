@@ -1,21 +1,9 @@
 /***** コンテンツ全体 *****/
-html,body{
-    height: 95%;
-    box-sizing: border-box;
-}
-body{
-    width: 1000px;
-    margin: 0 auto;
-    box-sizing: border-box;
-}
-
 .header{
-    height: 20%;
     box-sizing: border-box;
 }
 .contents{
     padding: 10px 10px 10px 10px;
-    height: 80%;
     box-sizing: border-box;
 }
 
@@ -48,7 +36,7 @@ body{
 
 .top{
     font-size: 28px;
-    float: left;
+
     width: 30%;
     margin: 5% 35% 2% 35%;
     text-align : center;

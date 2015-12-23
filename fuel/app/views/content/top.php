@@ -3,7 +3,7 @@
     <div class="content-top">
       <div class="main-nav">
         <ul>
-          <li><?php echo Html::anchor('index.php/cart','<i class="fa fa-shopping-cart"></i>カート',array('class'=>'link'))?>
+          <li><?php echo Html::anchor('index.php/cart','<i class="fa fa-shopping-cart"></i>カート',array('class'=>'link'))?></li>
           <li><?php echo Html::anchor('index.php/item/list','<i class="fa fa-book"></i>メニュー',array('class'=>'link'))?></li>
           <li><a href="#" class="link"><i class="fa fa-search"></i>ピザどこ？</a></li>
         </ul>

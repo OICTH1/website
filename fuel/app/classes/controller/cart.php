@@ -2,7 +2,6 @@
 
 class Controller_Cart Extends Controller_Page
 {
-    const SESSION_KEY_CART = 'cart';
 
     public function action_index(){
         $data;

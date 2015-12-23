@@ -1,13 +1,5 @@
 /***** コンテンツ全体 *****/
-html,body{
-    height: 95%;
-    box-sizing: border-box;
-}
-body{
-    width: 1000px;
-    margin: 0 auto;
-    box-sizing: border-box;
-}
+
 
 .header{
     height: 20%;
@@ -24,30 +16,31 @@ body{
 /*******見出しの所****/
 .cartheading,.deliveryheading {
     font-size: 28px;
-    float: left;
     padding: 6px 0;
     border: solid 1px;
     width: 100%;
     text-align : center;
     box-sizing: border-box;
-    margin-bottom: 20px;
-    margin-top: 40px;
+    margin-bottom: 40px;
 }
 /******ご注文内容部分*******/
 .cart{
-    float: left;
+
     border: solid 1px;
     width: 100%;
-    box-sizing: border-box;}
+    box-sizing: border-box;
+    margin-bottom: 40px;
+}
+
 
 .cartin{
-    float: left;
     font-size: 22px;
     width: 100%;
     height: 35px;
     padding:  5px 20px;
     border-bottom: solid 1px;
     box-sizing: border-box;
+    display: inline-block;
 }
 
 .name{
@@ -70,9 +63,14 @@ body{
     text-align: right
 }
 
+.cartin:after{
+    content:'';
+    display: block;
+    clear: both;
+}
+
 /*合計金額*/
 .summoney{
-    float: left;
     width: 100%;
     height: 35px;
     padding-top: 5px;
@@ -91,7 +89,7 @@ body{
 /******ご注文内容部分*******/
 /**********配達先住所部分***********/
 .delivery{
-    float: left;
+
     font-size: 22px;
     width: 100%;
     margin-bottom: 20px;
@@ -101,14 +99,12 @@ body{
 }
 
 .postal{
-    float: left;
     width: 100%;
     height: 40px;
     margin-bottom: 20px;
 }
 
 .address{
-    float: left;
     width: 100%;
     height: 50px;
 }
@@ -117,7 +113,6 @@ body{
 /*********確定戻る***********/
 .confirm{
     font-size: 30px;
-    float: left;
     width: 20%;
     margin: 2% 40% 0% 40%;
     text-align : center;
@@ -126,7 +121,6 @@ body{
 
 .back{
     font-size: 28px;
-    float: left;
     width: 16%;
     margin: 2% 42% 0% 42%;
     text-align : center;

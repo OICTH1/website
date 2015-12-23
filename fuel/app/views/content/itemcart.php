@@ -7,7 +7,6 @@
             ご注文内容
         </div>
         <div class="cart">
-
             <?php if(isset($cart['orders'])):?>
                 <?php foreach ($cart['orders'] as $key => $order) :?>
                     <div class="cartin">
@@ -33,6 +32,6 @@
             ご注文金額　<span><?php echo $cart['total_money']?></span>円
         </div>
         <div class="deliverybutton">
-            <a class="biglink">配達先選択へ進む</a>
+            <?php echo Html::anchor('index.php/order/delivery','配達先選択へ進む',array('class'=>'link'))?>
         </div>
     </div>

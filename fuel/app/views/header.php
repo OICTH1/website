@@ -20,7 +20,7 @@
             <div class="navigator">
               <ul class="navi-list">
                 <li><?php echo Html::anchor('index.php/top','TOP',array('class'=>'link'))?></li>
-                <li><a href="#">メニュー</a></li>
+                <li><?php echo Html::anchor('index.php/item/list','メニュー',array('class'=>'link'))?></li>
                 <li><a href="#">ピザどこ？</a></li>
               </ul>
             </div>
@@ -54,7 +54,7 @@
                 </div>
               </div>
                 <div class="info-cart info-item">
-                    商品カート
+                    <?php echo Html::anchor('index.php/cart','カート',array('class'=>'link'))?>
                 </div>
               <?php endif;?>
               </div>
@@ -64,14 +64,6 @@
       <div class="inner">
         <?php echo $content ?>
       </div>
-      <hr>
-      <footer>
-        <ul>
-          <li><h3></h3></li>
-          <li></li>
-          <li></li>
-        </ul>
-      </footer>
     </div>
   </body>
 </html>
