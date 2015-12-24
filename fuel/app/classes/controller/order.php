@@ -68,6 +68,6 @@ class Controller_Order Extends Controller_Page
             $neworderline->size = $orderline['size'];
             $neworderline->save();
         }
-        $this->template->content = var_dump($order->id);
+        $this->template->content = View::forge('content/ordercomplete');
     }
 }

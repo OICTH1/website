@@ -53,11 +53,14 @@
                   <div style="clear:both"></div>
                 </div>
               </div>
-                <div class="info-cart info-item">
-                    <?php echo Html::anchor('index.php/cart','カート',array('class'=>'link'))?>
-                </div>
-              <?php endif;?>
+              <div class="info-memberinfo info-item">
+                  <?php echo Html::anchor('index.php/member','会員情報',array('class'=>'link'))?>
               </div>
+              <div class="info-cart info-item">
+                  <?php echo Html::anchor('index.php/cart','カート',array('class'=>'link'))?>
+              </div>
+             <?php endif;?>
+            </div>
         </div>
       </header>
 
