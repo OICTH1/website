@@ -24,7 +24,7 @@ body{
 
 .listheading{
     font-size: 30px;
-    float: left;
+
     padding: 6px 0px 6px 0px;
     border: solid 1px;
     width: 100%;
@@ -35,7 +35,7 @@ body{
 }
 
 .list{
-    float: left;
+
     width: 100%;
 		background-color: pink;
     box-sizing: border-box;
@@ -43,6 +43,7 @@ body{
 
 .listitem{
     float: left;
+	
     border: solid 1px;
     width: 300px;
     margin: 13.3px;
@@ -53,7 +54,7 @@ body{
     padding: 0 0px;
 }
 .img > img{
-    float: left;
+
     height: 100%;
     width: 100%;
 }
@@ -111,7 +112,7 @@ a.biglink:hover{
 
 .toppage{
     font-size: 28px;
-    float: left;
+
     width: 30%;
     margin: 3% 35% 2% 35%;
     text-align : center;

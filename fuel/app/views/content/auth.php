@@ -9,15 +9,17 @@
            <div class="formin">
             <div class="formtitle">ご登録のメールアドレス</div><div class="forminput"><input type="text" name="mail" size="40" id="form-mail">
           </div>
+          <div style="clear:both"></div>
         </div>
           <div class="formin">
            <div class="formtitle">パスワード</div><div class="forminput"><input type="password" name="pass" size="40" id="form-password">
            </div>
+           <div style="clear:both"></div>
          </div>
             <?php if(isset($err)):?>
-                <p id="err-message">
+                <div id="err-message">
                   メールアドレスまたはパスワードが正しくありません
-                </p>
+              </div>
               <?php endif; ?>
         </div>
         <div class="login-btn">

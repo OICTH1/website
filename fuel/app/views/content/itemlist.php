@@ -1,7 +1,4 @@
 <?php echo Asset::css('content/itemlist.css');?>
-
-
-	<title>商品一覧画面</title>
 <div class="contents">
 	<div class="listheading">
 		ピザ
@@ -27,6 +24,7 @@
                 </div>
             </div>
 		<?php endforeach; ?>
+		<div style="clear:both"></div>
     </div>
 	<div class="toppage">
 		<?php echo Html::anchor('index.php/top','TOPページに戻る',array('class'=>'link'))?>
