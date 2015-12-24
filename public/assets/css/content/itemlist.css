@@ -1,14 +1,4 @@
 /***** コンテンツ全体 *****/
-html,body{
-	height: 95%;
-		box-sizing: border-box;
-}
-body{
-	width: 1000px;
-	margin: 0 auto;
-    box-sizing: border-box;
-}
-
 .header{
 	height: 20%;
 	box-sizing: border-box;
@@ -30,20 +20,19 @@ body{
     width: 100%;
     text-align : center;
     box-sizing: border-box;
-    margin-top: 40px;
     margin-bottom: 20px;
 }
 
 .list{
 
     width: 100%;
-		background-color: pink;
+	background-color: pink;
     box-sizing: border-box;
 }
 
 .listitem{
     float: left;
-	
+
     border: solid 1px;
     width: 300px;
     margin: 13.3px;
