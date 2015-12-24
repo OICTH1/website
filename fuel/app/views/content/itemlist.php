@@ -1,7 +1,14 @@
 <?php echo Asset::css('content/itemlist.css');?>
 <div class="contents">
 	<div class="listheading">
-		ピザ
+		メニュー
+	</div>
+	<div class="category">
+		<ul>
+			<li class="category-pizza"><?php echo Html::anchor('index.php/item/list/pizza','ピザ',array('class'=>'link'))?></li>
+			<li class="category-drink"><?php echo Html::anchor('index.php/item/list/drink','ドリンク',array('class'=>'link'))?></li>
+			<li class="category-side"><?php echo Html::anchor('index.php/item/list/side','サイド',array('class'=>'link'))?></li>
+		</ul>
 	</div>
 	<div class="list">
 			<?php foreach ( $item_list as $item) :?>
