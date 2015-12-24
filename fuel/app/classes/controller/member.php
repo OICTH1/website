@@ -17,4 +17,12 @@ class Controller_Member Extends Controller_Page
     public function action_edit(){
         $this->template->content = View::forge('content/membermodify');
     }
+
+    public function action_history()
+    {
+        $user_id = \Session::get(self::SESSION_KEY_USER_ID);
+        $user = Model_Member::find($user_id);
+        $data['orders'] = $user->orders;
+        $this->template->content = View::forge('content/orderlog',$data);
+    }
 }

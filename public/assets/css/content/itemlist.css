@@ -1,15 +1,4 @@
 /***** コンテンツ全体 *****/
-.header{
-	height: 20%;
-	box-sizing: border-box;
-}
-.contents{
-	padding: 10px 10px 10px 10px;
-	height: 80%;
-	box-sizing: border-box;
-}
-
-/***** コンテンツ全体 *****/
 /***********商品リスト部分*************/
 
 .listheading{
@@ -24,10 +13,10 @@
 }
 
 .list{
-
     width: 100%;
 	background-color: pink;
     box-sizing: border-box;
+	margin-bottom: 30px;
 }
 
 .listitem{
@@ -103,7 +92,7 @@ a.biglink:hover{
     font-size: 28px;
 
     width: 30%;
-    margin: 3% 35% 2% 35%;
+    margin: 0 auto;
     text-align : center;
     border: solid 1px;
 }

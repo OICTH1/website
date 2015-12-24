@@ -3,7 +3,7 @@
 <div class="formheading">
                 登録中のお客様情報
                 <div class="log">
-                    <a class="biglink">注文履歴を確認</a>
+                    <?php echo Html::anchor('index.php/member/history','注文履歴を確認',array('class'=>'link'))?>
                 </div>
             </div>
             <div class="form">
