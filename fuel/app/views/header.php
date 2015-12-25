@@ -36,7 +36,7 @@
                   <?php echo Html::anchor('index.php/auth','ログイン',array('class'=>'link','style'=>'color:#fff'))?>
                 </div>
                 <div class="info-signup info-item">
-                    <?php echo Html::anchor('index.php/member/new','新規登録',array('class'=>'link','style'=>'color:#fff'))?>
+                    <?php echo Html::anchor('index.php/newmember','新規登録',array('class'=>'link','style'=>'color:#fff'))?>
                 </div>
               <?php else:?>
               <div class="info-logout">
