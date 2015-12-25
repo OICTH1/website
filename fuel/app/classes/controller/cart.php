@@ -16,7 +16,6 @@ class Controller_Cart Extends Controller_Page
     }
 
     public function action_add(){
-
         if(empty(\Session::get(self::SESSION_KEY_CART))){
             \Session::set(self::SESSION_KEY_CART,array('orders'=>array()));
         }

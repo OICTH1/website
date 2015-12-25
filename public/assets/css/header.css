@@ -40,7 +40,7 @@ header{
   }
 
 .navi-list > li:hover{
-    background-color: #FFFFF0; 
+    background-color: #FFFFF0;
 }
   .navi-list > li:not(:last-child){
     border-right: dashed 1px  #A52A2A;
@@ -64,9 +64,17 @@ header{
     box-sizing: border-box;
     width: 100px;
     height: 100%;
-    padding: 60px 10px 0px 10px;
     float: left;
     border-left: solid 1px white;
+  }
+
+  .info-item > a{
+      padding: 60px 10px 0px 10px;
+      box-sizing: border-box;
+  }
+
+  .info-item > a:hover{
+      background-color: #FFFFF0;
   }
 
   .info-logout{
