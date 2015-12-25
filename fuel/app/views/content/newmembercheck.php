@@ -35,7 +35,7 @@
         <div class="formrightin"><span class="sex">男性</span></div>
     </div>
 </div>
-<div class="confirm"　>
+<div class="confirm">
     <a class="biglink">確定する</a>
 </div>
 <div class="modify">

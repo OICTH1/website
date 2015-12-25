@@ -11,6 +11,10 @@
     body{
       background-image: url(<?php echo Asset::get_file('background.png', 'img');?>);
     }
+    #logo{
+        background-image: url(<?php echo Asset::get_file('logo.png', 'img');?>);
+        background-size: contain;
+    }
     </style>
   </head>
   <body>
@@ -28,7 +32,7 @@
 
         <div class="header-bottom">
             <div class="logo">
-              <?php echo Asset::img('logo.png');?>
+              <?php echo Html::anchor('index.php/top','',array('class'=>'link','id'=>'logo'))?>
             </div>
             <div class="info-bar">
             <?php if(!$member):?>
