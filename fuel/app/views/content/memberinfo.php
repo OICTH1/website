@@ -31,8 +31,8 @@
                 </div>
             </div>
             <div class="modify">
-                <a class="biglink">編集</a>
+                <?php echo Html::anchor('index.php/member/edit','編集',array('class'=>'link'))?>
             </div>
             <div class="top">
-                <a class="biglink">トップページに戻る</a>
+                <?php echo Html::anchor('index.php/top','トップページに戻る',array('class'=>'link'))?>
             </div>
