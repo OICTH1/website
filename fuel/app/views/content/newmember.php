@@ -59,7 +59,7 @@
 <div class="back">
     <a class="biglink">戻る</a>
 </div>
-<?php echo Asset::js('contents/jquery/jquery.js') ?>
-<?php echo Asset::js('contents/jquery/jquery.validationEngine.js') ?>
-<?php echo Asset::js('contents/jquery/jquery.validationEngine-ja.js') ?>
-<?php echo Asset::js('contents/newmember.js') ?>
+<?php echo Asset::js('content/jquery/jquery.js') ?>
+<?php echo Asset::js('content/jquery/jquery.validationEngine.js') ?>
+<?php echo Asset::js('content/jquery/jquery.validationEngine-ja.js') ?>
+<?php echo Asset::js('content/newmember.js') ?>
