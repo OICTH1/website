@@ -7,6 +7,7 @@ class Controller_Page Extends Controller_Template
     const SESSION_KEY_USER_ID = 'user_id';
     const SESSION_KEY_CART = 'cart';
     const SESSION_KEY_ADDRESS = 'address';
+    const SESSION_KEY_POST = 'post';
 
 
     public function before(){

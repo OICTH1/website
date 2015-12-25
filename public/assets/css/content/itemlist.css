@@ -14,22 +14,22 @@
 
 .list{
     width: 100%;
-	background-color: pink;
+	background-color: #FFFACD;
     box-sizing: border-box;
 	margin-bottom: 30px;
 }
 
 .listitem{
     float: left;
-
+    background-color: #FFFFF0;
     border: solid 1px;
     width: 300px;
-    margin: 13.3px;
+    margin: 12.5px;
     box-sizing: border-box;
 }
 .img{
     height: 180px;
-    padding: 0 0px;
+    padding: 10px;
 }
 .img > img{
 
@@ -38,7 +38,7 @@
 }
 .pizzaname{
     font-size: 23px;
-		padding: 0px 5px;
+	padding: 0px 5px;
     margin-top: 5px;
 }
 .zei{

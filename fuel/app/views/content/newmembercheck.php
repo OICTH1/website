@@ -11,33 +11,27 @@
         <div class="formleftin">フリガナ<br></div>
         <div class="formleftin">郵便番号</div>
         <div class="formleftin">住所</div>
-        <div class="formleftin">番地</div>
-        <div class="formleftin">号以降</div>
-        <div class="formleftin">建物名</div>
-        <div class="formleftin">会社名</div>
         <div class="formleftin">電話番号</div>
         <div class="formleftin">生年月日</div>
         <div class="formleftin">性別</div>
     </div>
     <div class="formright">
-       <div class="formrightin"><span class="mail">mtpizza@umai.jp</span></div>
-        <div class="formrightin"><span class="password">*******</span></div>
-        <div class="formrightin"><span class="description">性　：</span><span class="last_name">比座</span><span class="description">名　：</span><span class="first_name">鋤太郎</span></div>
-        <div class="formrightin"><span class="description">セイ：</span><span class="last_name_kana">ピザ</span><span class="description">メイ：</span><span class="first_name_kana">スキタロウ</span></div>
-        <div class="formrightin"><span class="postal">1112222</span></div>
-        <div class="formrightin"><span class="address">大阪府大阪市○○区○○町</span></div>
-        <div class="formrightin"><span class="banti">5</span></div>
-        <div class="formrightin"><span class="gouikou">5</span></div>
-        <div class="formrightin"><span class="tatemono">大阪情報コンピュータ専門学校</span></div>
-        <div class="formrightin"><span class="kaisya">大阪情報コンピュータ専門学校運営法人</span></div>
-        <div class="formrightin"><span class="phone">090-8080-8989</span></div>
-        <div class="formrightin">西暦　<span class="years">1900</span>　年　<span class="month">10</span>　月　<span class="days">10</span>　日</div>
-        <div class="formrightin"><span class="sex">男性</span></div>
+       <div class="formrightin"><span class="mail"><?php echo $newmember['mail'] ?></span></div>
+        <div class="formrightin"><span class="password"><?php for ($i=0; $i < strlen($newmember['password1']); $i++) {
+            echo '*';
+        }?></span></div>
+        <div class="formrightin"><span class="name"><?php echo $newmember['name'] ?></span></div>
+        <div class="formrightin"><span class="name_kana"><?php echo $newmember['kana'] ?></span></div>
+        <div class="formrightin"><span class="postal"><?php echo $newmember['postal'] ?></span></div>
+        <div class="formrightin"><span class="address"><?php echo $newmember['address'] ?></span></div>
+        <div class="formrightin"><span class="phone"><?php echo $newmember['phone'] ?></span></div>
+        <div class="formrightin">西暦<span class="years"><?php echo $newmember['years'] ?></span>年<span class="month"><?php echo $newmember['month'] ?></span>月<span class="days"><?php echo $newmember['days'] ?></span>日</div>
+        <div class="formrightin"><span class="sex"><?php if(isset($newmember['sex'])){echo $newmember['sex'].'性';} ?></span></div>
     </div>
 </div>
 <div class="confirm">
-    <a class="biglink">確定する</a>
+    <?php echo Html::anchor('index.php/newmember/commit','確定する',array('class'=>'link'))?>
 </div>
 <div class="modify">
-    <a class="biglink">再編集する</a>
+    <?php echo Html::anchor('index.php/newmember/edit','再編集する',array('class'=>'link'))?>
 </div>
