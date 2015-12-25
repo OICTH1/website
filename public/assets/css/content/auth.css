@@ -10,6 +10,7 @@
     text-align : center;
     box-sizing: border-box;
     margin-bottom: 20px;
+    background-color: #FFFACD;
 }
 
 
@@ -17,7 +18,8 @@
 .loginform{
     border: solid 1px;
     box-sizing: border-box;
-    padding: 30px 20px 30px 80px;
+    padding: 20px 30px ;
+    background-color: #FFFACD;
 }
 
 #form-password,#form-mail{
@@ -64,12 +66,13 @@
 
 .login-btn{
     font-size: 28px;
-    border: solid 1px;
     width: 5em;
     text-align: center;
     padding: 15px;
     margin: 0 auto;
     clear: both;
+    background-color: #CD853F;
+    border-radius: 8px;
 }
 
 .login-btn > label{
@@ -84,9 +87,10 @@
     font-size: 28px;
     padding:10px;
     width: 40%;
-    margin: 2% 30% 0% 30%;
+    margin: 40px auto;
     text-align : center;
-    border: solid 1px;
+    background-color: #CD853F;
+    border-radius: 8px;
 }
 
 .return-top{
@@ -94,9 +98,10 @@
     padding-top: 7px;
     width: 30%;
     padding: 10px;
-    margin: 2% 35% 2% 35%;
+    margin: 0 auto;
     text-align : center;
-    border: solid 1px;
+    background-color: #CD853F;
+    border-radius: 8px;
 }
 /***********下のボタン***********/
 
@@ -104,4 +109,5 @@
 
 #err-message{
   color: #f00;
+  margin-bottom: 20px;
 }
