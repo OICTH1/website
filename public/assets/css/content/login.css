@@ -89,14 +89,14 @@ input{font-size: 80%;}
     border: solid 1px;
 }
 
-.biglink{
+.link{
     padding: 9px;
     display: block;
     height: 100%;
     width: 100%;
     box-sizing: border-box;
 }
-.biglink:hover{
+.link:hover{
     background-color: chartreuse;
 }
 /***********下のボタン***********/

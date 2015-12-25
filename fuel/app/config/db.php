@@ -6,5 +6,12 @@
  */
 
 return array(
-
+  'default' => array(
+    'connection' => array(
+    'dsn' => 'mysql:host=localhost;dbname=mtpizza',
+    'username' => 'root',
+    'password' => 'oicth1',
+              'locale' => 'ja_JP.utf8',
+    ),
+  ),
 );

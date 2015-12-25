@@ -150,14 +150,14 @@
     border: solid 1px black;
 }
 
-.biglink{
+.link{
     padding-top: 7px;
     display: block;
     height: 100%;
     width: 100%;
     box-sizing: border-box;
 }
-.biglink:hover{
+.link:hover{
     background-color: chartreuse;
 }
 .back{

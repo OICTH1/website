@@ -13,10 +13,6 @@
         <div class="formleftin">フリガナ　[必須]<br></div>
         <div class="formleftin">郵便番号　[必須]</div>
         <div class="formleftin">住所　[必須]</div>
-        <div class="formleftin">番地　[必須]</div><span class="description"></span>
-        <div class="formleftin">号以降　[必須]</div><span class="description"></span>
-        <div class="formleftin">建物名</div>
-        <div class="formleftin">会社名</div>
         <div class="formleftin">電話番号　[必須]</div>
         <div class="formleftin">生年月日　[必須]</div>
         <div class="formleftin">性別　[必須]</div>
@@ -29,21 +25,12 @@
 
             <div class="formrightin"><input type="password" name="password2" size="50" class="validate[required,equals[password1]]"></div>
 
-            <div class="formrightin">　<span class="description">性：</span><input type="text" name="name" class="validate[required]">　<span class="description">名：</span><input type="text" name="name" class="validate[required]"></div>
-
-            <div class="formrightin"><span class="description">セイ：</span><input type="text" name="kana" class="validate[required]">　<span class="description">メイ：</span><input type="text" name="kana" class="validate[required]"></div>
-
-            <div class="formrightin"><input type="text" name="postal"  size="7" class="validate[required]">　　　<input type="button" name="search" value="検索"><span class="description">（-は含まない）</span></div>
+            <div class="formrightin"><span class="description">姓　名</span><input type="text" name="name"></div>
+            <div class="formrightin"><span class="description">セイメイ</span><input type="text" name="kana"></div>
+            
+            <div class="formrightin"><input type="text" name="postal"  size="7" class="validate[required]">　　　<input type="button" name="search" value="検索"><span class="description">（-を含める）</span></div>
             <div class="formrightin"><input type="text" name="address" size="40" class="validate[required]"></div>
 
-            <div class="formrightin"><input type="text" name="banti" size="4" class="validate[required]"></div><span class="description">【例】東京都渋谷区恵比寿南1丁目2-3の場合、”2” を入力してください。</span>
-
-            <div class="formrightin"><input type="text" name="gouikou" size="5" class="validate[required]"></div><span class="description">【例】東京都渋谷区恵比寿南1丁目2-3の場合、”2” を入力してください。</span>
-
-            <div class="formrightin"><input type="text" name="tatemono" size="40"><span class="description">（部屋番号・フロア番号も含む）</span>
-            </div>
-
-            <div class="formrightin"><input type="text" name="kaisya" size="40"></div>
             <div class="formrightin"><input type="text" name="phone" class="validate[custom[phone],required]"><span class="description">（-を含めず続けて書く）</span></div>
 
             <div class="formrightin">西暦<input type="text" name="years" size="4" class="validate[required]">年　<input type="text" name="month" size="2" class="validate[required]">月　<input type="text" name="days" size="2" class="validate[required]">日<span class="description"> （会員登録後の変更はできません）</span></div>

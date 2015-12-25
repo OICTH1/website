@@ -72,7 +72,7 @@
     box-sizing: border-box;
 }
 
-a.biglink{
+a.link{
     padding-top: 7px;
     display: block;
     padding: 8px 0px;
@@ -80,7 +80,7 @@ a.biglink{
     width: 100%;
     box-sizing: border-box;
 }
-a.biglink:hover{
+a.link:hover{
     background-color: chartreuse;
 }
 

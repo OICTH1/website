@@ -43,14 +43,14 @@
     border: solid 1px;
 }
 
-.biglink{
+.link{
     padding: 7px;
     display: block;
     height: 100%;
     width: 100%;
     box-sizing: border-box;
 }
-.biglink:hover{
+.link:hover{
     background-color: chartreuse;
 }
 /*******Topページに戻る部分*******/

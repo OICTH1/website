@@ -5,7 +5,6 @@
 /*******見出しの所****/
 .logheading {
     font-size: 28px;
-
     padding: 6px 0;
     border: solid 1px;
     width: 100%;
@@ -166,14 +165,14 @@
 /**********注文履歴一覧***********/
 /*********戻る***********/
 
-.biglink{
+.link{
     padding: 7px;
     display: block;
     height: 100%;
     width: 100%;
     box-sizing: border-box;
 }
-.biglink:hover{
+.link:hover{
     background-color: chartreuse;
 }
 
