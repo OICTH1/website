@@ -48,7 +48,11 @@
                                     </div>
                                 </div>
                     <?php endforeach; ?>
-                    <div style="clear:both"></div
+                    <div style="clear:both"></div>
+                  </div>
+                </div>
+              </li>
+            </div>
             <div class="back">
                 <a class="buttonlink">戻る</a>
             </div>

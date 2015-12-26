@@ -82,11 +82,11 @@
 </table>
 
 <div class="confirmation">
-    <input type="submit" value="決定" class="biglink">
+    <input type="submit" value="決定" class="buttonlink">
 </div>
 <?php echo Form::close()?>
 <div class="back">
-    <a class="biglink">戻る</a>
+    <a class="buttonlink">戻る</a>
 </div>
 <?php echo Asset::js('content/jquery/jquery.js') ?>
 <?php echo Asset::js('content/jquery/jquery.validationEngine.js') ?>
