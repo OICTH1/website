@@ -50,7 +50,7 @@
                     <?php endforeach; ?>
                     <div style="clear:both"></div
             <div class="back">
-                <a class="biglink">戻る</a>
+                <a class="buttonlink">戻る</a>
             </div>
 
 <?php echo Asset::js('content/jquery/jquery.js');?>

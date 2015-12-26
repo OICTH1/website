@@ -66,6 +66,6 @@
 </div>
 </div>
 <div class="list">
-  <a href="" title="" class="biglink">一覧へ戻る</a>
+  <a href="" title="" class="buttonlink">一覧へ戻る</a>
 </div>
 <?php echo Asset::js('content/itemdetail.js')?>

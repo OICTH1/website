@@ -158,7 +158,7 @@
     border: solid 1px;
 }
 
-a.link{
+a.buttonlink{
     padding-top: 7px;
     display: block;
     padding: 8px 0px;
@@ -166,7 +166,7 @@ a.link{
     width: 100%;
     box-sizing: border-box;
 }
-a.link:hover{
+a.buttonlink:hover{
     background-color: chartreuse;
 }
 /*********確定戻る***********/

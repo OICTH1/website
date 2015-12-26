@@ -31,8 +31,8 @@
                 </div>
             </div>
             <div class="modify">
-                <?php echo Html::anchor('index.php/member/edit','編集',array('class'=>'link'))?>
+                <?php echo Html::anchor('index.php/member/edit','編集',array('class'=>'buttonlink'))?>
             </div>
             <div class="top">
-                <?php echo Html::anchor('index.php/top','トップページに戻る',array('class'=>'link'))?>
+                <?php echo Html::anchor('index.php/top','トップページに戻る',array('class'=>'buttonlink'))?>
             </div>

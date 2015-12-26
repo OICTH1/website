@@ -39,8 +39,8 @@
         </div>
     </div>
     <div class="confirm">
-        <?php echo Html::anchor('index.php/order/commit','確定',array('class'=>'link'))?>
+        <?php echo Html::anchor('index.php/order/commit','確定',array('class'=>'buttonlink'))?>
     </div>
     <div class="back">
-        <?php echo Html::anchor('index.php/order/delivery','戻る',array('class'=>'link'))?>
+        <?php echo Html::anchor('index.php/order/delivery','戻る',array('class'=>'buttonlink'))?>
     </div>

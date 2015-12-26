@@ -34,11 +34,11 @@
         </div>
       </div>
 <div class="modify">
-    <input type="submit" value="編集完了" class="link">
+    <input type="submit" value="編集完了" class="buttonlink">
 </div>
     </form>
 <div class="back">
-    <a class="link">編集せず戻る</a>
+    <a class="buttonlink">編集せず戻る</a>
 </div>
 <?php echo Asset::js('content/jquery/jquery.js') ?>
 <?php echo Asset::js('content/jquery/jquery.validationEngine.js') ?>

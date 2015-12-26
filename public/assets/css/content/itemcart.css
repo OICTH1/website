@@ -107,7 +107,7 @@ span.biglink:hover{
 }
 /***********カートの下の合計金額************/
 /*********配達先選択へ進む*******/
-a.biglink{
+a.link{
     padding-top: 7px;
     display: block;
     padding: 8px 0px;
@@ -115,7 +115,7 @@ a.biglink{
     width: 100%;
     box-sizing: border-box;
 }
-a.biglink:hover{
+a.link:hover{
     background-color: chartreuse;
 }
 

@@ -78,10 +78,10 @@
     </div>
 </div>
 <div class="confirm">
-    <a class="biglink">確定</a>
+    <a class="buttonlink">確定</a>
 </div>
 <div class="back">
-    <a class="biglink">戻る</a>
+    <a class="buttonlink">戻る</a>
 </div>
 <?php echo Asset::js("https://maps.googleapis.com/maps/api/js?key=AIzaSyAGCQellvVcqIZwpn0xtU0Vrc5SBLWnTt8") ?>
 <?php echo Asset::js('contents/whereismypizza.js') ?>
