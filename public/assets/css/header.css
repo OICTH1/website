@@ -84,6 +84,10 @@ header{
     border-left: solid 1px white;
   }
 
+.info-logout > div:first-child{
+    margin-bottom: 4px;
+    color: #2F291B;
+}
   .member-ber{
     border: solid 1px #666;
     height: auto;
@@ -102,11 +106,12 @@ header{
 .logout-btn{
   font-size: 14px;
   padding: 4px 2px;
-  border: solid 4px #666;
+  border: solid 4px #2F291B;
   background-color: #FFFFFF;
   border-radius: 4px;
   box-sizing: border-box;
 }
+
 .logout-btn > a{
   color: #000;
 }

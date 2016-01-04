@@ -13,13 +13,17 @@
 
 /*-----main-nav---------------------------*/
 .main-nav{
-  font-size: 24px;
-  width: 240px;
+  font-size:24px;
+  width: 270px;
+  height: 394px;
   float: left;
 
 }
 
 .main-nav ul{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   margin: 0;
   list-style: none;
   padding: 0;
@@ -30,7 +34,7 @@
   background-color: #FFFACD	;
   width: 100%;
   /*border: solid 10px #FFD700;*/
-  padding: 20px;
+  padding: 40px;
   border-radius: 30px;
   color: #A52A2A;
   box-sizing: border-box;
@@ -66,7 +70,7 @@
 .top-banner{
   float: right;
   width: 700px;
-  height: 308px;
+  height: 394px;
 }
 
 .top-banner img{
@@ -99,17 +103,17 @@
 }
 
 .re-list-item{
+    flex: 1;
   width: 320px;
 }
 
-.re-list-item:not(:last-child){
-  padding-right: 60px;
-}
+
 
 .re-list-item-img{
   position: relative;
   width: 270px;
   height: 270px;
+  margin: 0 auto;
   margin-bottom: 15px;
 }
 
