@@ -68,6 +68,7 @@ class Controller_Order Extends Controller_Page
             $neworderline->size = $orderline['size'];
             $neworderline->save();
         }
+        \Session::delete(self::SESSION_KEY_CART);
         $this->template->content = View::forge('content/ordercomplete');
     }
 }
