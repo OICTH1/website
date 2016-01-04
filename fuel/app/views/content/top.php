@@ -3,9 +3,18 @@
     <div class="content-top">
       <div class="main-nav">
         <ul>
-          <li><?php echo Html::anchor('index.php/cart','<i class="fa fa-shopping-cart"></i>カート',array('class'=>'link'))?></li>
-          <li><?php echo Html::anchor('index.php/item/list','<i class="fa fa-book"></i>メニュー',array('class'=>'link'))?></li>
-          <li><a href="#" class="link"><i class="fa fa-search"></i>ピザどこ？</a></li>
+          <li>
+              <?php echo Html::anchor('index.php/cart','',array('class'=>'imglink'))?>
+              <div><i class="fa fa-shopping-cart"></i></div><div>カート</div><div class="clear"></div>
+          </li>
+          <li>
+              <?php echo Html::anchor('index.php/item/list','',array('class'=>'imglink'))?>
+              <div><i class="fa fa-book"></i></div><div>メニュー</div><div class="clear"></div>
+          </li>
+          <li>
+              <?php echo Html::anchor('#','',array('class'=>'imglink'))?>
+              <div><i class="fa fa-search"></i></div><div>ピザどこ？</div><div class="clear"></div>
+          </li>
         </ul>
       </div>
       <div class="top-banner">
@@ -13,8 +22,8 @@
       </div>
       <div style="clear:both"></div>
     </div>
+    <div class="recommendation-label">オススメピザ</div>
     <div class="recommendation">
-        <div class="recommendation-label">オススメピザ</div>
         <div class="recommendation-list">
           <div class="re-list-item">
               <div class="re-list-item-img">

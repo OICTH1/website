@@ -1,35 +1,38 @@
 
+
+
   *{
   }
 
  html,body{
       padding: 0;
       margin: 0;
-      height: 100%;
   }
+
 
   .main{
     width: 1040px;
     min-height: 100%;
     margin: 0 auto;
-    background-color: rgba(255, 255, 0, 0.4);
-    padding: 40px 0;
+    background-color: rgba(248,237,209, 0.4);
+    padding: 30px 0 40px 0;
 
   }
 
 header{
   width: 1000px;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
-  .header-top{
+.header-top{
     width: 100%;
     height: 30px;
-  }
-  .navigator{
+}
+
+.navigator{
     float: right;
-  }
+}
   .navi-list{
     margin: 0;
     list-style: none;
@@ -39,9 +42,6 @@ header{
     padding: 4px 15px;
   }
 
-.navi-list > li:hover{
-    background-color: #FFFFF0;
-}
   .navi-list > li:not(:last-child){
     border-right: dashed 1px  #A52A2A;
   }
@@ -51,12 +51,11 @@ header{
   }
 
   .header-bottom{
-    background-color: green;
+    background-color: ;
     height: 100px;
   }
 
   .info-bar{
-    color: white;
     float: right;
     height: 100%;
   }
@@ -122,7 +121,7 @@ header{
     width: 160px;
     height: 90px;
     border-radius: 40px;
-    background-color: #FFFACD;
+
     margin: 5px
   }
   .inner{
@@ -130,3 +129,38 @@ header{
     height: inherit;
     width: 1000px;
   }
+
+
+/****Color********/
+body{
+    background-color: #FEC049/**/;
+}
+
+.header-bottom{
+    background-color: #CD1D1F;
+}
+
+*{
+    color: #2F291B;
+}
+
+.logo{
+    background-color: #F8EDD1;
+}
+
+.info-item {
+    border-color: #F8EDD1;
+}
+
+.info-item a{
+    color: #FEC049;
+}
+
+.info-item a:hover{
+    background-color: #F8EDD1;
+    color:#CD1D1F;
+}
+
+.navi-list > li:hover{
+    background-color: #F8EDD1;
+}
