@@ -21,8 +21,7 @@ class Controller_Member Extends Controller_Page
     public function action_history()
     {
         $user_id = \Session::get(self::SESSION_KEY_USER_ID);
-        $user = Model_Member::find($user_id);
-        $data['orders'] = $user->orders;
+        $data['orders'] = Model_Order::query()->where('member_id',$user_id)->order_by('order_date','desc')->get();
         $this->template->content = View::forge('content/orderlog',$data);
     }
 

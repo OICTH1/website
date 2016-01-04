@@ -7,7 +7,7 @@
                 <ul class="log-list" style="list-style:none">
                     <?php foreach ($orders as $order):?>
                         <li class="log-list-item">
-                            <div class="title"><span class="titleleft"><?php echo $order['order_date'] ?></span><span class="titleright openicon"></span>></div>
+                            <div class="title"><span class="titleleft"><?php echo $order['order_date'] ?></span><span class="titleright openicon"></span></div>
                             <div class="datail">
                                 <div class="cart">
                                 <?php $total_money = 0;foreach ($order->orderline as $orderline):?>
