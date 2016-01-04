@@ -27,16 +27,21 @@
 
 .main-nav li{
   background-color: #FFFACD	;
-  padding: 30px 20px;
   width: 100%;
   border: solid 10px #FFD700;
   border-radius: 30px;
   color: #A52A2A;
   box-sizing: border-box;
+  position: relative;
 }
 
 .main-nav li:not(:last-child){
   margin-bottom: 30px;
+}
+
+.main-nav li > a{
+    padding: 30px 20px;
+    box-sizing: border-box;
 }
 
 /*-----top-banner-------------------------*/
