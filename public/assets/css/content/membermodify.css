@@ -6,7 +6,6 @@
 /*******見出しの所****/
 .formheading {
     font-size: 30px;
-    float: left;
     padding: 6px 0px 6px 0px;
     border: solid 1px;
     width: 100%;
@@ -17,7 +16,6 @@
 
 /**********配達先住所部分***********/
 .form{
-    float: left;
     font-size: 22px;
     width: 100%;
     margin-bottom: 20px;
@@ -64,9 +62,9 @@
 /**********配達先住所部分***********/
 /*********確定戻る***********/
 .modify{
-    float: left;
     width: 30%;
-    margin: 0% 0% 2% 35%;
+    margin: 0 auto;
+    margin-bottom: 20px;
     text-align : center;
     border: solid 1px;
     box-sizing: border-box;
@@ -91,9 +89,8 @@
 
 .back{
     font-size: 26px;
-    float: left;
     width: 20%;
-    margin: 0% 0% 0% 15%;
+    margin: 0 auto;
     text-align : center;
     border: solid 1px;
     box-sizing: border-box;

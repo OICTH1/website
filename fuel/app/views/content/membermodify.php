@@ -32,6 +32,9 @@
           <div class="formrightin"><input type="password" id="pass1" name="pass1" size="50" class="validate[minSize[8]"><span class="description">（8文字以上）</span></div>
           <div class="formrightin"><input type="password" name="pass2" size="50" class="validate[equals[pass1]]"></div>
         </div>
+        <div class="clear">
+
+        </div>
       </div>
 <div class="modify">
     <input type="submit" value="編集完了" class="buttonlink">

@@ -29,6 +29,7 @@
                     <div class="formrightin">西暦　<span class="years"><?php echo explode('-',$user['birthday'])[0]?></span>年<span class="month"><?php echo explode('-',$user['birthday'])[1]?></span>月<span class="days"><?php echo explode('-',$user['birthday'])[2]?></span>日</div>
                     <div class="formrightin"><span class="sex"><?php echo $user['sex']?>性</span></div>
                 </div>
+                <div class="clear"></div>
             </div>
             <div class="modify">
                 <?php echo Html::anchor('index.php/member/edit','編集',array('class'=>'buttonlink'))?>
