@@ -5,7 +5,7 @@
     </div>
     <div class="loginform">
         <div class="form">
-           <?php echo form::open('index.php/auth/login')?>
+           <?php echo form::open('index.php/auth/login/' . $selectflag)?>
            <div class="formin">
             <div class="formtitle">ご登録のメールアドレス</div><div class="forminput"><input type="text" name="mail" size="40" id="form-mail">
           </div>

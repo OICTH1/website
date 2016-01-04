@@ -5,7 +5,7 @@ class Controller_Order Extends Controller_Page
     public function before(){
             parent::before();
           if(empty(\Session::get(self::SESSION_KEY_USER_ID))){
-            return Response::redirect('index.php/auth');
+            return Response::redirect('index.php/auth/index/true');
           }
     }
 

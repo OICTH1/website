@@ -3,17 +3,20 @@
 class Controller_Auth Extends Controller_Page
 {
 
-    public function action_index()
+    public function action_index($selectflag = false)
     {
-      $this->template->content = View::forge('content/auth');
+      $data['selectflag'] = $selectflag;
+      $this->template->content = View::forge('content/auth',$data);
     }
 
-    public function action_err(){
-      $this->template->content = View::forge('content/auth',array('err' => true ));
+    public function action_err($selectflag = false){
+      $data['selectflag'] = $selectflag;
+      $data['err'] = true;
+      $this->template->content = View::forge('content/auth',$data);
     }
 
 
-    public function action_login(){
+    public function action_login($selectflag = false){
 
        $login_user = Model_Member::find('all', array(
                                                                           'where' =>array(
@@ -28,14 +31,18 @@ class Controller_Auth Extends Controller_Page
           if(empty(\Session::get(self::SESSION_KEY_CART))){
               \Session::set(self::SESSION_KEY_CART,array('orders'=>array(),'total_money'=>0));
           }
-          return Response::redirect('index.php/top');
+          if ($selectflag == 'true') {
+              return Response::redirect('index.php/order/delivery');
+          } else {
+              return Response::redirect('index.php/top');
+          }
       } else {
-        return Response::redirect('index.php/auth/err');
+            return Response::redirect('index.php/auth/err');
       }
     }
 
     public function action_logout(){
-        \Session::destroy();
+        \Session::delete(self::SESSION_KEY_USER_ID);
         return Response::redirect('index.php/top');
     }
 }
