@@ -20,18 +20,22 @@
                             金額￥<span><?php echo $order['money']?></span>
                         </div>
                         <div class="change">
-                            <?php echo Html::anchor('index.php/item/detail/'.$order['item_id'] . '/' . $key,'変更',array('class'=>'link'))?>
+                            <?php echo Html::anchor('index.php/item/detail/'.$order['item_id'] . '/' . $key,'変更',array('class'=>'cartinbutton'))?>
                         </div>
                         <div class="delete">
-                            <?php echo Html::anchor('index.php/cart/delete/' . $key,'削除',array('class'=>'link'))?>
+                            <?php echo Html::anchor('index.php/cart/delete/' . $key,'削除',array('class'=>'cartinbutton'))?>
                         </div>
                     </div>
                 <?php endforeach;?>
             <?php endif;?>
+          </div>
         <div class="summoney">
             ご注文金額　<span><?php echo $cart['total_money']?></span>円
         </div>
         <div class="deliverybutton">
-            <?php echo Html::anchor('index.php/order/delivery','配達先選択へ進む',array('class'=>'link'))?>
+            <?php echo Html::anchor('index.php/order/delivery','配達先選択へ進む',array('class'=>'buttonlink'))?>
         </div>
-    </div>
+        <div class="itemlistbutton">
+          <?php echo Html::anchor('index.php/item/list','お買い物を続ける',array('class'=>'buttonlink'))?>
+        </div>
+      </div>

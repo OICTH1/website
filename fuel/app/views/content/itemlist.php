@@ -27,12 +27,12 @@
 	            <div class="zei">(税込)</div>
                 <div class="description"><?php echo $item['explanatory']?></div>
                 <div class="syousai">
-					<?php echo Html::anchor('index.php/item/detail/' . $item['item_id'],'詳細を見る',array('class'=>'link'))?>
+					<?php echo Html::anchor('index.php/item/detail/' . $item['item_id'],'詳細を見る',array('class'=>'buttonlink'))?>
                 </div>
             </div>
 		<?php endforeach; ?>
 		<div style="clear:both"></div>
     </div>
 	<div class="toppage">
-		<?php echo Html::anchor('index.php/top','TOPページに戻る',array('class'=>'link'))?>
+		<?php echo Html::anchor('index.php/top','TOPページに戻る',array('class'=>'buttonlink'))?>
 	</div>

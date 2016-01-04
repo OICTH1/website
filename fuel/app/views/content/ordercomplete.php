@@ -7,5 +7,5 @@
     <p><a>Where is my pizza</a>で確認ができます。</p></div>
 </div>
 <div class="top">
-    <a class="biglink">トップページへ戻る</a>
+    <a class="buttonlink">トップページへ戻る</a>
 </div>

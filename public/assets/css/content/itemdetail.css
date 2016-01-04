@@ -152,12 +152,17 @@
 
 .selectright{
 	float: left;
-	padding: 20px 0px 20px 50px;
+	padding: 10px 0px 20px 10px;
 	width: 26%;
 	height: 100%;
 	/*background-image: url("../img/cart.png");*/
 	background-size: contain;
 	box-sizing: border-box;
+}
+
+.selectright>input{
+    font-size: 32px;
+    border: solid 1px black;
 }
 /*********セレクト&数量選択カート移動***********/
 
@@ -174,14 +179,25 @@
 	box-sizing: border-box;
 }
 
-a.link{
+a.buttonlink{
     display: block;
     padding: 10px 0px;
     height: 100%;
     width: 100%;
     box-sizing: border-box;
 }
-a.link:hover{
+a.buttonlink:hover{
+    background-color: chartreuse;
+}
+
+.buttonlink{
+    padding-top: 7px;
+     display: block;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+.buttonlink:hover{
     background-color: chartreuse;
 }
 

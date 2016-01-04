@@ -127,14 +127,14 @@
     border: solid 1px;
 }
 
-.link{
+.buttonlink{
     padding: 7px;
     display: block;
     height: 100%;
     width: 100%;
     box-sizing: border-box;
 }
-.link:hover{
+.buttonlink:hover{
     background-color: chartreuse;
 }
 
