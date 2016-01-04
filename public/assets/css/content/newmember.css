@@ -74,17 +74,6 @@
     border: solid 1px black;
 }
 
-.link{
-    padding-top: 7px;
-     display: block;
-    height: 100%;
-    width: 100%;
-    box-sizing: border-box;
-}
-.link:hover{
-    background-color: chartreuse;
-}
-
 .back{
     font-size: 28px;
     float: left;

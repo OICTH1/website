@@ -5,3 +5,11 @@ a.link{
    text-decoration: none;
    color: #A52A2A;
 }
+
+a.imglink{
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    position: absolute;
+}

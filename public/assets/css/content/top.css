@@ -82,6 +82,7 @@
 }
 
 .re-list-item-img{
+  position: relative;
   width: 270px;
   height: 270px;
   margin-bottom: 15px;

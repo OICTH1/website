@@ -54,7 +54,7 @@
               </li>
             </div>
             <div class="back">
-                <a class="buttonlink">戻る</a>
+                <?php echo Html::anchor('index.php/member','戻る',array('class'=>'buttonlink'))?>
             </div>
 
 <?php echo Asset::js('content/jquery/jquery.js');?>

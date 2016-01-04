@@ -28,10 +28,10 @@
       <?php echo form::close()?>
     </div>
     <div class="newmember">
-        <a>新規会員登録はこちら</a>
+        <?php echo Html::anchor('index.php/newmember','新規会員登録はこちら',array('class'=>'buttonlink'))?>
     </div>
     <div class="return-top">
-        <?php echo Html::anchor('index.php/top','トップページへ戻る',array('class'=>'link'))?>
+        <?php echo Html::anchor('index.php/top','トップページへ戻る',array('class'=>'buttonlink'))?>
 
     </div>
 </div>

@@ -7,5 +7,5 @@
     <p><a>Where is my pizza</a>で確認ができます。</p></div>
 </div>
 <div class="top">
-    <a class="buttonlink">トップページへ戻る</a>
+    <?php echo Html::anchor('index.php/top','トップページへ戻る',array('class'=>'buttonlink'))?>
 </div>

@@ -38,10 +38,12 @@ class Controller_Item Extends Controller_Page
         /*if(!empty($item)){
             return Response::redirect('index.php/welcome/404');
         }*/
+        $category_table =  array('ピザ'=>'pizza','サイド' => 'side','ドリンク' =>'drink');
         $data['detail'] = array(
             'item_id' => $item->id,
             'img_path' => 'items/'.$item->img['path'],
             'item_name' => $item->name,
+            'category' => $category_table[$item->category],
             'prices' => array(
                 'unit_price' => $item->unit_price,
                 'unit_price_s' => $item->unit_price_s,

@@ -17,24 +17,24 @@
         <div class="recommendation-label">オススメピザ</div>
         <div class="recommendation-list">
           <div class="re-list-item">
-            <a href="http://localhost/website/public/index.php/top" class="link">
               <div class="re-list-item-img">
+                <?php echo Html::anchor('index.php/item/detail/1','',array('class'=>'imglink'))?>
                 <?php echo Asset::img('margherita.jpg');?>
               </div>
               <div class="re-list-item-name">マルゲリータ</div>
             </a>
           </div>
           <div class="re-list-item">
-            <a href="http://localhost/website/public/index.php/top" class="link">
               <div class="re-list-item-img">
+                <?php echo Html::anchor('index.php/item/detail/11','',array('class'=>'imglink'))?>
                 <?php echo Asset::img('rukora.jpg');?>
               </div>
               <div class="re-list-item-name">ルコラ</div>
             </a>
           </div>
           <div class="re-list-item">
-            <a href="http://localhost/website/public/index.php/top" class="link">
               <div class="re-list-item-img">
+                <?php echo Html::anchor('index.php/item/detail/8','',array('class'=>'imglink'))?>
                 <?php echo Asset::img('capricciosa.jpg');?>
               </div>
               <div class="re-list-item-name">  カプリチョーザ</div>
