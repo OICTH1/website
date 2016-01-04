@@ -32,6 +32,5 @@
     </div>
     <div class="return-top">
         <?php echo Html::anchor('index.php/top','トップページへ戻る',array('class'=>'buttonlink'))?>
-
     </div>
 </div>

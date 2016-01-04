@@ -12,6 +12,9 @@ class Controller_Cart Extends Controller_Page
     public function action_index(){
         $data;
         $data['cart'] = \Session::get(self::SESSION_KEY_CART);
+        if(count($data['cart']['orders']) == 0){
+            return Response::redirect('index.php/top');
+        }
         $this->template->content = View::forge('content/itemcart',$data);
     }
 
