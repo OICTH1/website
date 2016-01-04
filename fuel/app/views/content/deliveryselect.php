@@ -8,7 +8,7 @@
 </div>
 
 <!--==========配達先選択=====================-->
-<?php echo Form::open('index.php/order/enter')?>
+<?php echo Form::open(array('action' => 'index.php/order/enter', 'id' => 'other-form'))?>
 <table class="select-address">
     <!--==========登録している住所=====================-->
   <tr>

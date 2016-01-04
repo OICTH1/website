@@ -19,7 +19,7 @@
     </div>
     <div class="formright">
         <?php $flag = isset($editing) ?>
-        <?php echo Form::open(array('action'=>'index.php/newmember/check','method'=>'post')) ?>
+        <?php echo Form::open(array('action'=>'index.php/newmember/check','method'=>'post','id'=>'formin')) ?>
             <div class="formrightin"><input type="text" name="mail" size="60" class="validate[required,custom[email]]" value=<?php if($flag){echo $editing['mail'];} ?>></div>
 
             <div class="formrightin"><input type="password" name="password1" id="password1" size="50" class="validate[required],minSize[8]">　<span class="description">8文字以上</span></div>
