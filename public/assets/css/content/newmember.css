@@ -4,7 +4,6 @@
 /*******見出しの所****/
 .formheading {
     font-size: 30px;
-    float: left;
     padding: 6px 0px 6px 0px;
     border: solid 1px;
     width: 100%;
@@ -15,7 +14,6 @@
 
 /**********配達先住所部分***********/
 .form{
-    float: left;
     font-size: 22px;
     width: 100%;
     margin-bottom: 20px;
@@ -59,10 +57,13 @@
     text-decoration: underline;
 }
 
+.clear{
+  clear: both;
+}
+
 /**********配達先住所部分***********/
 /*********確定戻る***********/
 .confirmation{
-    float: left;
     width: 30%;
     margin: 0% 35% 0% 35%;
     text-align : center;
@@ -76,7 +77,6 @@
 
 .back{
     font-size: 28px;
-    float: left;
     width: 20%;
     margin: 2% 40% 2% 40%;
     text-align : center;
