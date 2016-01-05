@@ -1,8 +1,8 @@
 <?php echo Asset::css('content/itemdetail.css')?>
 
 <div class="menu">
-  <div class="menuheading">
-    メニュー
+  <div class="heading">
+    商品詳細
   </div>
   <div class="menuin">
           <div class="menuname"><?php echo $detail['item_name']?></div>

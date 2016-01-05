@@ -2,19 +2,11 @@
 /***********商品リスト部分*************/
 
 .listheading{
-    font-size: 30px;
 
-    padding: 6px 0px 6px 0px;
-    border: solid 1px;
-    width: 100%;
-    text-align : center;
-    box-sizing: border-box;
-    margin-bottom: 20px;
 }
 
 .list{
     width: 100%;
-	background-color: #FFFACD;
     box-sizing: border-box;
 	margin-bottom: 30px;
 }
@@ -26,9 +18,8 @@
 .listitem{
     flex: 1;
     background-color: #FFFFF0;
-    border: solid 1px;
-    width: 300px;
-    margin: 12.5px;
+    width: 250px;
+    margin: 30px;
     box-sizing: border-box;
 }
 
@@ -78,7 +69,6 @@
 }
 .syousai{
     text-align: center;
-    border: solid 2px;
     font-size: 25px;
     box-sizing: border-box;
 }
@@ -91,9 +81,6 @@ a.buttonlink{
     width: 100%;
     box-sizing: border-box;
 }
-a.buttonlink:hover{
-    background-color: chartreuse;
-}
 
 /*---------------category*****************/
 .category {
@@ -104,42 +91,25 @@ a.buttonlink:hover{
 	display: flex;
 	list-style: none;
 	padding: 0;
+    margin: 0;
 }
 
 .category li{
 	flex: auto;
 	text-align: center;
-	padding: 10px;
+	padding: 15px;
 	font-size: 22px;
 	box-sizing: border-box;
-
 }
 
-.category li > a{
-	color: #800000;
-}
 
-.category li:first-child{
+/*.category li:first-child{
 	border-radius: 8px 0px 0px 8px;
 }
 
 .category li:last-child{
 	border-radius: 0px 8px 8px 0px;
-}
-.category-pizza{
-	border-color: green;
-	background-color: green;
-}
-
-.category-drink{
-	border-color: #FFFACD;
-	background-color: #FFFACD;
-}
-
-.category-side{
-	border-color: red;
-	background-color: red;
-}
+}*/
 
 /***********商品リスト部分*************/
 /**********トップページに戻る***********/
@@ -154,3 +124,60 @@ a.buttonlink:hover{
 }
 
 /**********トップページに戻る***********/
+
+
+/*****Color*******/
+
+.category > ul{
+
+}
+
+.category li > a{
+	/*color: #800000;*/
+}
+.category-pizza,.category-side{
+	background-color: #CD1D1F;
+
+}
+
+.category-pizza  a,.category-side  a{
+    color: #F8EDD1;
+}
+
+.category-drink{
+    background-color: #FEC049;
+}
+
+.category-drink{
+    color:  #2F291B;
+}
+
+.list{
+	background-color: #F8EDD1;
+}
+
+.listitem{
+    background-color: #FEC049;
+}
+
+.syousai{
+    background-color: #98B21D;
+    border: solid 2px #98B21D;
+    box-sizing: border-box;;
+}
+
+.syousai:hover{
+    background-color: #F8EDD1;
+    border: solid 2px #98B21D;
+    box-sizing: border-box;;
+}
+
+.toppage{
+    background-color: #2F291B;
+    border-radius: 40px;
+}
+
+.toppage > a{
+    color:#F8EDD1;
+    padding: 20px;
+}
