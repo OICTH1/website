@@ -26,8 +26,8 @@
 
             <div class="formrightin"><input type="password" name="password2" size="50" class="validate[required,equals[password1]]"></div>
 
-            <div class="formrightin"><input type="text" name="name" value=<?php if($flag){echo $editing['name'];} ?>><span class="description" >姓名</span></div>
-            <div class="formrightin"><input type="text" name="kana" value=<?php if($flag){echo $editing['kana'];} ?>><span class="description" >セイメイ</span></div>
+            <div class="formrightin"><input type="text" name="name" class="validate[required]" value=<?php if($flag){echo $editing['name'];} ?>><span class="description" >姓名</span></div>
+            <div class="formrightin"><input type="text" name="kana" class="validate[required]" value=<?php if($flag){echo $editing['kana'];} ?>><span class="description" >セイメイ</span></div>
 
             <div class="formrightin"><input type="text" name="postal"  size="7" class="validate[required]" value=<?php if($flag){echo $editing['postal'];} ?>><input type="button" name="search" value="検索"><span class="description">（-を含める）</span></div>
             <div class="formrightin"><input type="text" name="address" size="40" class="validate[required]" value=<?php if($flag){echo $editing['address'];} ?>></div>
@@ -41,6 +41,7 @@
             <div class="formrightin"><label><input type="radio" name="sex" value="男" class="validate[required]" <?php if($flag && isset($editing['sex']) && $editing['sex'] == "男" ){echo 'checked';} ?>>男性</label>　
                 <label><input type="radio" name="sex" value="女" class="validate[required]" <?php if($flag && isset($editing['sex']) && $editing['sex'] == "女" ){echo 'checked';} ?>>女性<span class="description">会員登録後の変更はできません</span></div></label>
 </div>
+<div class="clear"></div>
 </div>
 <div class="confirmation">
     <input type="submit" value="確認画面へ" class="biglink">
