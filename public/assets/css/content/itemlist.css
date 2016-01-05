@@ -19,14 +19,25 @@
 	margin-bottom: 30px;
 }
 
+.listrow{
+    display: flex;
+}
+
 .listitem{
-    float: left;
+    flex: 1;
     background-color: #FFFFF0;
     border: solid 1px;
     width: 300px;
     margin: 12.5px;
     box-sizing: border-box;
 }
+
+.noneitem{
+    background: none;
+    border: solid 1px;
+    border-color: rgba(0,0,0,0);
+}
+
 .img{
     height: 180px;
     padding: 10px;
