@@ -1,6 +1,6 @@
 <?php echo Asset::css('content/itemlist.css');?>
 <div class="contents">
-	<div class="listheading">
+	<div class="heading">
 		メニュー
 	</div>
 	<div class="category">
