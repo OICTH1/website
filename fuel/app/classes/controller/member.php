@@ -18,6 +18,29 @@ class Controller_Member Extends Controller_Page
         $this->template->content = View::forge('content/membermodify');
     }
 
+    public function action_editcommit(){
+        $user_id = \Session::get(self::SESSION_KEY_USER_ID);
+        $user = Model_Member::find($user_id);
+        $keys = array(
+            'name'=>'name',
+            'kana'=>'phonetic',
+            'postal'=>'postalcode',
+            'address'=>'address',
+            'mail'=>'mailaddress',
+            'phone' => 'tel',
+            'pass2'=>'password',
+        );
+        foreach ($keys as $key => $value) {
+            if($_POST[$key] != ''){
+                $user[$value] = $_POST[$key];
+            }
+        }
+        $user->save();
+
+        //$this->template->content = var_dump($_POST);
+        return Response::redirect('index.php/member');
+    }
+
     public function action_history()
     {
         $user_id = \Session::get(self::SESSION_KEY_USER_ID);
