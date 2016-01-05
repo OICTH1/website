@@ -29,6 +29,7 @@ class Controller_Item Extends Controller_Page
             ));
         }
         $data['item_list'] = $item_list;
+        $data['category'] = $category_table[$category];
         $this->template->content = View::forge('content/itemlist',$data);
     }
 

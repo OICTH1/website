@@ -135,6 +135,15 @@ a.buttonlink{
 .category li > a{
 	/*color: #800000;*/
 }
+
+.category li:hover{
+    background-color: #2F291B;
+}
+
+.category li > a:hover{
+    color: #F8EDD1;
+}
+
 .category-pizza,.category-side{
 	background-color: #CD1D1F;
 
