@@ -43,6 +43,6 @@
 		?>
 		<div style="clear:both"></div>
     </div>
-	<div class="toppage">
-		<?php echo Html::anchor('index.php/top','TOPページに戻る',array('class'=>'buttonlink'))?>
+	<div class=" button">
+		<?php echo Html::anchor('index.php/top','TOPページに戻る',array('class'=>'link'))?>
 	</div>

@@ -9,6 +9,7 @@
     width: 100%;
     box-sizing: border-box;
 	margin-bottom: 30px;
+    padding: 40px 0;
 }
 
 .listrow{
@@ -69,7 +70,7 @@
 }
 .syousai{
     text-align: center;
-    font-size: 25px;
+    font-size: 24px;
     box-sizing: border-box;
 }
 
@@ -97,9 +98,12 @@ a.buttonlink{
 .category li{
 	flex: auto;
 	text-align: center;
-	padding: 15px;
-	font-size: 22px;
+	font-size: 24px;
 	box-sizing: border-box;
+}
+
+.category li > a{
+    padding: 15px;
 }
 
 
@@ -115,12 +119,7 @@ a.buttonlink{
 /**********トップページに戻る***********/
 
 .toppage{
-    font-size: 28px;
 
-    width: 30%;
-    margin: 0 auto;
-    text-align : center;
-    border: solid 1px;
 }
 
 /**********トップページに戻る***********/
@@ -170,14 +169,4 @@ a.buttonlink{
     background-color: #F8EDD1;
     border: solid 2px #98B21D;
     box-sizing: border-box;;
-}
-
-.toppage{
-    background-color: #2F291B;
-    border-radius: 40px;
-}
-
-.toppage > a{
-    color:#F8EDD1;
-    padding: 20px;
 }
