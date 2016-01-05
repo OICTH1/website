@@ -1,6 +1,6 @@
 <?php echo Asset::css('content/auth.css')?>
 <div class="contents">
-    <div class="loginformheading">
+    <div class="heading">
         ログインページ
     </div>
     <div class="loginform">

@@ -1,6 +1,6 @@
 <?php echo Asset::css('content/newmembercheck.css')?>
 
-<div class="formheading">
+<div class="heading">
     入力した情報の確認
 </div>
 <div class="form">

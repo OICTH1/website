@@ -1,7 +1,7 @@
 <?php echo Asset::css('content/membermodify.css') ?>
 <?php echo Asset::css('content/validationEngine.jquery.css') ?>
 
-<div class="formheading">
+<div class="heading">
     会員情報編集
 </div>
 <div class="form">

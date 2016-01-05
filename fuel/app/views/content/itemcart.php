@@ -3,7 +3,7 @@
     <title>商品カート</title>
 
     <div class="contents">
-        <div class="cartheading">
+        <div class="heading">
             ご注文内容
         </div>
         <div class="cart">

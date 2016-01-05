@@ -1,5 +1,5 @@
 <?php echo Asset::css('content/ordercheck.css');?>
-    <div class="cartheading">
+    <div class="heading">
         ご注文内容
     </div>
     <div class="cart">
@@ -26,7 +26,7 @@
         </div>
     </div>
 
-    <div class="deliveryheading">
+    <div class="heading">
         配達先
     </div>
     <div class="delivery">

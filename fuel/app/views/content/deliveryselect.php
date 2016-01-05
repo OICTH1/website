@@ -3,7 +3,7 @@
 
 
 
-<div class="deliveryheading">
+<div class="heading">
     配達先選択
 </div>
 

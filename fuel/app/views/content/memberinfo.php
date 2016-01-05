@@ -1,6 +1,6 @@
 <?php echo Asset::css('content/memberinfo.css')?>
 
-<div class="formheading">
+<div class="heading">
                 登録中のお客様情報
                 <div class="log">
                     <?php echo Html::anchor('index.php/member/history','注文履歴を確認',array('class'=>'link'))?>

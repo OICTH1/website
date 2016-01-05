@@ -1,7 +1,7 @@
 <?php echo Asset::css('content/newmember.css') ?>
 <?php echo Asset::css('content/validationEngine.jquery.css') ?>
 
-<div class="formheading">
+<div class="heading">
     新規会員登録
 </div>
 <div class="form">

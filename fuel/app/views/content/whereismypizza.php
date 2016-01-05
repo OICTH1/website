@@ -1,6 +1,6 @@
 <?php echo Asset::css('contents/whereismypizza.css') ?>
 
-<div class="cartheading">
+<div class="heading">
     ご注文内容
 </div>
 <div class="cart">
@@ -55,7 +55,7 @@
         </div>
     </div>
 </div>
-<div class="deliveryheading">
+<div class="heading">
     配達先
 </div>
 <div class="delivery">
@@ -69,7 +69,7 @@
         ○○○○○○ビル×××号室
     </div>
 </div>
-<div class="whereheading">
+<div class="heading">
     Where is my pizza
 </div>
 <div class="whereismypizza">

@@ -1,6 +1,6 @@
  	  <?php echo Asset::css('content/orderlog.css');?>
 
-            <div class="logheading">
+            <div class="heading">
                 注文履歴一覧
             </div>
             <div class="log">
