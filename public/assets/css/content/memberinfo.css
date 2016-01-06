@@ -3,68 +3,36 @@
 /***** コンテンツ全体 *****/
 
 /*******見出しの所****/
-.formheading {
-    font-size: 32px;
-    padding: 10px;
-    padding-left: 200px;
-    border: solid 1px;
-    width: 100%;
-    text-align : center;
-    box-sizing: border-box;
-    margin-bottom: 20px;
-}
-
-.log{
-    font-size: 23px;
-    float: right;
-    width: 200px;
-    margin-right: 10px;
-    text-align : center;
-    border: solid 1px;
-}
-
-.log > .biglink{
-    padding: 4px;
-}
 
 /**********配達先住所部分***********/
+
+.memberinfo{
+    margin-bottom: 30px;
+    border-radius: 0 0 30px 30px;
+}
+
 .form{
-    font-size: 22px;
-    width: 100%;
+    font-size: 24px;
+    padding: 30px;
+    padding-left: 60px;
+    box-sizing: border-box;
+}
+
+.formitem,.formitem > div{
+    display: inline-block;
+}
+
+
+.formitem:not(:last-child){
     margin-bottom: 20px;
-    padding: 10px;
-    border: solid 1px;
-    box-sizing: border-box;
 }
 
-.formleft{
-    float:  left;
-    height: 100%;
-    width: 40%;
-    text-align: left;
-    font-size: 23.5px;
-    padding-left: 10%;
-    box-sizing: border-box;
+.itemleft{
+    float: left;
+    width: 7em;
+    margin-right: 80px;;
 }
 
-.formleftin{
-    padding: 12.6px 0px;
-
-}
-
-.formright{
-    float:  left;
-    height: 100%;
-    width: 60%;
-    font-size: 23.5px;
-    text-align: left;
-    box-sizing: border-box;
-}
-
-.formrightin{
-    padding: 12.6px; 0px;
-    width: 100%;
-}
 
 .first_name,.last_name,.first_name_kana,.last_name_kana{
     width: 20%;
@@ -81,36 +49,37 @@
     padding-right: 20px;
     height: 100%;
 }
+
+.memberinfo-bottom{
+    background-color: #CD1D1F;
+    text-align: right;
+    padding: 20px;
+    border-radius: 0 0 30px 30px;
+}
+
+.memberinfo-bottom .button{
+    font-size: 24px;
+    width: 8em;
+    display: inline-block;
+}
+
+.memberinfo-bottom .button > a{
+}
 /**********配達先住所部分***********/
 /**********配達先住所部分***********/
 /*********確定戻る***********/
 .modify{
-    font-size: 26px;
-    width: 20%;
-    margin: 0 auto;
-    margin-bottom: 20px;
-    text-align : center;
-    border: solid 1px;
+
 }
 
 .top{
-    font-size: 23px;
-    width: 20%;
-    margin: 0 auto;
-    text-align : center;
-    border: solid 1px;
+
 }
 
-a.buttonlink{
-    padding-top: 7px;
-    display: block;
-    padding: 8px 0px;
-    height: 100%;
-    width: 100%;
-    box-sizing: border-box;
-}
-a.buttonlink:hover{
-    background-color: chartreuse;
-}
 
 /*********確定戻る***********/
+
+/*****Color******/
+.memberinfo{
+    background-color: #F8EDD1;
+}
