@@ -166,17 +166,17 @@ a.buttonlink{
 }
 
 .listitem{
-    background-color: #FEC049;
+    background-color: #F8EDD1;
+    border: solid 4px #98B21D;
+    box-sizing: border-box;
 }
 
 .syousai{
-    background-color: #98B21D;
-    border: solid 2px #98B21D;
+    background-color: #FEC049;
     box-sizing: border-box;;
 }
 
 .syousai:hover{
-    background-color: #F8EDD1;
-    border: solid 2px #98B21D;
+    /*background-color: #CD1D1F;*/
     box-sizing: border-box;;
 }
