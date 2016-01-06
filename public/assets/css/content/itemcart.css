@@ -4,137 +4,122 @@
 /***** コンテンツ全体 *****/
 /******カート部分*******/
 /*見出しの所*/
-.cartheading {
-    font-size: 28px;
-    float: left;
-    padding: 6px 0;
-    border: solid 1px;
-    width: 100%;
-    text-align : center;
-    box-sizing: border-box;
-}
-
 .cart{
-    float: left;
-    width: 100%;
-    font-size: 21px;
-    box-sizing: border-box;
-    border: solid 1px;
-    padding: 0% 5%;
-    padding-top: 3%;
-    margin-top: 15px;
-    margin-bottom: 20px;
+    padding: 30px 0;
+    border-radius: 0 0 30px 30px ;
+    margin-bottom: 30px;
 }
 
-.cartin{
-    float: left;
+.orders{
     width: 100%;
-    height:120px;
-    margin-bottom: 3%;
-    border: solid 1px;
+    font-size: 24px;
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+.order{
+    width: 100%;
+
     box-sizing: border-box;
 }
+
+.order:not(:last-child){
+    margin-bottom: 30px;
+}
+
+.order-bottom{
+    padding: 10px 20px;
+}
+
+.order-bottom,.order-bottom a{
+    font-size: 20px;
+}
+
+.order-bottom > div:not(.clear){
+    float: right;
+
+}
+
+.order-bottom > div > div{
+    float: left;
+
+}
+
+.order-bottom > div > div:not(:nth-last-child(2)){
+    margin-right: 15px;
+}
+
 
 .name{
-    float: left;
-    width: 100%;
-    height: 70%;
-    padding: 0 4%;
-    padding-top: 4%;
-    border-bottom: solid 1px;
+    padding: 40px 0;
+    padding-left: 20px;
     box-sizing: border-box;
 }
 
 .num{
-    float: left;
-    width: 40%;
-    height: 30%;
-    padding-top: 10px;
+    padding: 10px 0;
     text-align: right;
     box-sizing: border-box;
 
 }
 
 .money{
-    float: left;
-    width: 30%;
-    height: 30%;
-    padding-top: 10px;
+    padding: 10px 0;
     box-sizing: border-box;
     text-align: center;
 }
 
 .change{
-    float: left;
-    width: 14.0%;
-    margin: 0.5%;
-    text-align : center;
-    border: solid 1px;
     box-sizing: border-box;
 }
 
 .delete{
-    float: left;
-    width: 14.0%;
-    margin: 0.5%;
-    text-align : center;
-    border: solid 1px;
     box-sizing: border-box;
+}
+.order-bottom .button{
+    border-radius: 20px;
+    width: auto;
+}
+.order-bottom .button > a{
+    font-size: 20px;
+    padding: 10px;
 }
 
-a.cartinbutton{
-    font-size: 20px;
-    display: block;
-    padding: 3px 0px;
-    height: 100%;
-    width: 100%;
-    box-sizing: border-box;
-}
-a.cartinbutton:hover{
-    background-color: chartreuse;
-}
+
 /***********カートの下の合計金額************/
 .summoney{
     font-size: 28px;
     clear: both;
-    padding-top: 8px;
-    border: solid 1px;
+    padding: 10px 0;
     width: 100%;
     height: 6%;
-    margin-top: 10px;
-    margin-bottom: 20px;
     padding-right: 20px;
     text-align : right;
     box-sizing: border-box;
 }
 /***********カートの下の合計金額************/
 /*********配達先選択へ進む*******/
-a.buttonlink{
-    padding-top: 7px;
-    display: block;
-    padding: 8px 0px;
-    height: 100%;
-    width: 100%;
+.selectdelivery{
+    margin-bottom: 30px;
+}
+
+/*********配達先選択へ進む*******/
+
+
+/***********Color*************/
+.cart{
+    background-color: #F8EDD1;
+}
+
+.order{
+    border: solid 4px #98B21D;
     box-sizing: border-box;
 }
-a.buttonlink:hover{
-    background-color: chartreuse;
+
+.order-bottom{
+    background-color: #FEC049;
 }
 
-.deliverybutton{
-    font-size: 30px;
-    width: 30%;
-    margin: auto;
-    margin-bottom: 20px;
-    text-align : center;
-    border: solid 1px;
+.summoney{
+    background-color: #CD1D1F;
 }
-
-.itemlistbutton{
-    font-size: 30px;
-    width: 30%;
-    margin: auto;
-    text-align : center;
-    border: solid 1px;
-}
-/*********配達先選択へ進む*******/

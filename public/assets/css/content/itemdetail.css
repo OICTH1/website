@@ -125,6 +125,7 @@
 }
 .selectleft{
 	font-size:34px;
+	padding: 17px 0;
 	box-sizing: border-box;
 }
 .selectleft > select{
@@ -133,7 +134,7 @@
 }
 
 .selectcenter{
-	padding: 5px 0;
+	padding: 17px 0;
 	box-sizing: border-box;
 }
 
@@ -172,10 +173,14 @@
 }
 
 .select{
-
 	background-color: #CD1D1F
 }
 
-.select div{
-
+.selectright > input{
+	background-color: #2F291B;
+	border: none;
+	border-radius: 30px;
+	color: #F8EDD1;
+	padding: 20px;
+	font-size: 24px;
 }
