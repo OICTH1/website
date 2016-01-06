@@ -12,10 +12,11 @@
 
   .main{
     width: 1040px;
-    min-height: 100%;
+    min-height: 100vh;
     margin: 0 auto;
     background-color: rgba(248,237,209, 0.4);
     padding: 30px 0 40px 0;
+    box-sizing: border-box;
 
   }
 

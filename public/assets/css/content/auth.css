@@ -3,27 +3,19 @@
 /***** コンテンツ全体 *****/
 
 /*******見出しの所****/
-.loginformheading {
-    font-size: 30px;;
-    padding: 6px 0;
-    border: solid 1px;
-    text-align : center;
-    box-sizing: border-box;
-    margin-bottom: 20px;
-    background-color: #FFFACD;
-}
-
 
 /**********ログインのフォーム**********/
 .loginform{
-    border: solid 1px;
     box-sizing: border-box;
-    padding: 20px 30px ;
+    padding: 30px 30px ;
     background-color: #FFFACD;
+    font-size: 24px;
+    margin-bottom: 30px;
+    border-radius: 0 0 30px 30px ;
 }
 
 #form-password,#form-mail{
-  font-size: 30px;
+  font-size: 24px;
 }
 #form-mail{
   width: 15em;
@@ -35,48 +27,55 @@
 
 
 .form{
-    font-size: 30px;
     box-sizing: border-box;
     width: 100%;
-    float: none;
+
 }
 .form form{
-  float: none;
+
 }
 
 .formin{
   width: 100%;
   box-sizing: border-box;
-  float: none;
+
+}
+
+.formin:first-child {
+    margin-bottom: 20px;
+}
+
+.formin:last-child {
+    margin-bottom: 30px;
 }
 
 .formtitle{
   width: 35%;
   float: left;
   box-sizing: border-box;
-  padding: 20px 0px;
+  padding: 4px 0;
 }
 
 .forminput{
   width: 60%;
   float: left;
-    box-sizing: border-box;
-      padding: 20px 0px;
+  box-sizing: border-box;
 }
 
 .login-btn{
-    font-size: 28px;
-    width: 5em;
-    text-align: center;
-    padding: 15px;
-    margin: 0 auto;
-    clear: both;
-    background-color: #CD853F;
-    border-radius: 8px;
+
 }
 
 .login-btn > label{
   display: block;
+  color: #F8EDD1;
+  padding: 10px;
+  font-size: 24px;
+  width: 5em;
+  margin: 0 auto;
+  text-align : center;
+  background-color: #2F291B;
+  border-radius: 40px;
 }
 
 
@@ -84,24 +83,11 @@
 /**********ログインのフォーム***********/
 /***********下のボタン***********/
 .newmember{
-    font-size: 28px;
-    padding:10px;
-    width: 40%;
-    margin: 40px auto;
-    text-align : center;
-    background-color: #CD853F;
-    border-radius: 8px;
+    margin-bottom: 30px;
 }
 
 .return-top{
-    font-size: 28px;
-    padding-top: 7px;
-    width: 30%;
-    padding: 10px;
-    margin: 0 auto;
-    text-align : center;
-    background-color: #CD853F;
-    border-radius: 8px;
+
 }
 /***********下のボタン***********/
 
@@ -110,4 +96,9 @@
 #err-message{
   color: #f00;
   margin-bottom: 20px;
+}
+
+/*Color*/
+.loginform{
+    background-color: #F8EDD1;
 }
