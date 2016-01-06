@@ -43,11 +43,12 @@
 </div>
 <div class="clear"></div>
 </div>
-<div class="confirmation">
-    <input type="submit" value="確認画面へ" class="biglink">
+<div class="confirmation button">
+    <input type="submit" value="" class="biglink" id="sbt">
+    <label for="sbt">確認画面へ</label>
 </div>
 <?php echo Form::close() ?>
-<div class="back">
+<div class="back button">
     <?php echo Html::anchor('index.php/top','戻る',array('class'=>'link'))?>
 </div>
 <?php echo Asset::js('content/jquery/jquery.js') ?>

@@ -17,12 +17,30 @@ a.imglink{
     left: 0;
 }
 
+
+
 .button{
     width: 30%;
     margin: 0 auto;
     text-align : center;
     background-color: #2F291B;
     border-radius: 40px;
+}
+
+.button > label{
+    display: block;
+    color: #F8EDD1;
+    padding: 20px;
+    font-size: 24px;
+    width: 5em;
+    margin: 0 auto;
+    text-align : center;
+    background-color: #2F291B;
+    border-radius: 40px;
+}
+
+.button > input{
+    display: none;
 }
 
 .button > a{
