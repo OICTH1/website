@@ -94,6 +94,7 @@
 <?php echo Asset::js('content/jquery/jquery.js') ?>
 <?php echo Asset::js('content/jquery/jquery.validationEngine.js') ?>
 <?php echo Asset::js('content/jquery/jquery.validationEngine-ja.js') ?>
+<?php echo Asset::js('content/jquery/ajaxzip3.js')?>
 <?php echo Asset::js('content/deliveryselect.js')?>
 <script type="text/javascript" src="http://jpostal.googlecode.com/svn/trunk/jquery.jpostal.js"></script>
 <script type="text/javascript">
