@@ -27,6 +27,10 @@ a.imglink{
     border-radius: 40px;
 }
 
+.button:not(:last-child){
+    margin-bottom: 30px;
+}
+
 .button > label{
     display: block;
     color: #F8EDD1;

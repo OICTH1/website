@@ -4,81 +4,21 @@
 /***** コンテンツ全体 *****/
 
 /*******見出しの所****/
-.cartheading,.deliveryheading {
-    font-size: 30px;
-    padding: 6px 0;
-    border: solid 1px;
-    width: 100%;
-    text-align : center;
-    box-sizing: border-box;
-    margin-bottom: 20px;
-}
 
 /******ご注文内容部分*******/
-.cart{
-
-    border: solid 1px;
-    width: 100%;
-    box-sizing: border-box;}
-
-.cartin{
-
-    font-size: 22px;
-    width: 100%;
-    height: 35px;
-    padding:  5px 20px;
-    border-bottom: solid 1px;
-    box-sizing: border-box;
-}
-
-.name{
-
-    width: 60%;
-    height: 100%;
-    text-align: center;
-}
-
-.num{
-
-    width: 10%;
-    height: 100%;
-}
-
-.money{
-
-    width: 30%;
-    height: 100%;
-    text-align: right
-}
-
-/*合計金額*/
-.summoney{
-
-    width: 100%;
-    padding: 5px 0;
-    font-size: 32px;
-    text-align: right;
-    box-sizing: border-box;
-}
-
-.sum{
-    font-size: 32px;
-    width: 20%;
-    float: right;
-    text-align: center;
-    box-sizing: border-box;
-}
-
-.sum > span{
-  font-size: 32px;
-}
 
 /*住所洗濯フォーム*/
 .select-address{
-  font-size: 22px;
-  table-layout: fixed;
-  border: solid 1px;
+  font-size: 24px;
+  padding: 30px;
   width: 100%;
+  margin-bottom: 30px;
+  border-radius:  0 0 30px 30px;
+}
+
+.select-address table{
+    width: 100%;
+    table-layout: fixed;
 }
 
 /*ラジオボタン用ラベル*/
@@ -88,7 +28,7 @@
 
 
 .select-address td{
-  border: solid 1px;
+
 }
 .select-address td:nth-child(1){
   width: 40px;
@@ -103,16 +43,21 @@
 /*選択詳細　タイトル*/
 .select-address h3{
   margin: 0;
+  font-size: 24px;
 }
 /*登録住所　詳細*/
 #registered-address{
   padding-left: 1em;
+  margin-top: 20px;
 }
 
 /***********住所指定欄************/
 .other-form{
+  margin-top: 20px;
+  padding: 30px;
   display: none;
 }
+
 
 .other-form > div:not(:last-child){
   margin-bottom: 2.5em;
@@ -136,36 +81,24 @@
 }
 
 /*********確定戻る***********/
-.confirmation {
-    padding: 20px 0px;
-    width: 30%;
-    margin: 0% 35% 0% 35%;
-    text-align : center;
-}
 
-.confirmation>input{
-    font-size: 32px;
-    border: solid 1px black;
-}
+/*********確定戻る***********/
 
-.buttonlink{
-    padding-top: 7px;
-    display: block;
-    height: 100%;
-    width: 100%;
+/*Color*/
+.select-address{
+    background-color: #F8EDD1;
+
     box-sizing: border-box;
 }
-.buttonlink:hover{
-    background-color: chartreuse;
-}
-.back{
 
-    width: 20%;
-    margin: 0% 40% 0% 40%;
-    text-align : center;
-    border: solid 1px;
+
+.select-address tr > td:first-child{
+    background-color: #FEC049;
 }
-.back a{
-    font-size: 32px;
+.select-address td:last-child{
+    background-color: rgba(152,178,29,0.6);
+    box-sizing: border-box;
 }
-/*********確定戻る***********/
+.other-form {
+    border-top: solid 4px #F8EDD1;
+}
