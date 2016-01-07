@@ -29,7 +29,7 @@
             <div class="formrightin"><input type="text" name="name" class="validate[required]" value=<?php if($flag){echo $editing['name'];} ?>><span class="description" >姓名</span></div>
             <div class="formrightin"><input type="text" name="kana" class="validate[required]" value=<?php if($flag){echo $editing['kana'];} ?>><span class="description" >セイメイ</span></div>
 
-            <div class="formrightin"><input type="text" name="postal"  size="7" class="validate[required]" value=<?php if($flag){echo $editing['postal'];} ?>><input type="button" name="search" value="検索"><span class="description">（-を含める）</span></div>
+            <div class="formrightin"><input type="text" name="postal"  size="7" class="validate[required]" value=<?php if($flag){echo $editing['postal'];} ?>><span class="description">（-を含める）</span></div>
             <div class="formrightin"><input type="text" name="address" size="40" class="validate[required]" value=<?php if($flag){echo $editing['address'];} ?>></div>
 
             <div class="formrightin"><input type="text" name="phone" class="validate[custom[phone],required]" value=<?php if($flag){echo $editing['phone'];} ?>><span class="description">（-を含める）</span></div>

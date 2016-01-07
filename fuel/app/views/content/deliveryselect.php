@@ -42,15 +42,14 @@
                 <div class="form-postal">
                     <div class="form-label required">郵便番号　[必須]</div>
                     <div class="form-input">
-                        <input type="text" name="postalcode" value="" class="validate[required]">
-                    <input type="button" name="address-search" value="自動検索" id="address-search">
+                        〒<input id="postcode1" name="postcode1" maxlength="3" class="validate[required]">-<input id="postcode2" name="postcode2" maxlength="4" class="validate[required]">
                   </div>
                   <div class="form-describe">-を含む   【例】123-4567</div>
                 </div>
                 <!--都道府県、市区町村-->
                 <div class="form-address-1">
                     <div class="form-label required">住所　[必須]</div>
-                    <div class="form-input"><input type="text" name="address1" value="" class="validate[required]"></div>
+                    <div class="form-input"><input type="text" id="hoge" name="address1" value="" class="validate[required]"></div>
                   <div class="form-describe">【例】東京都渋谷区恵比寿南1丁目2-3の場合、”東京都渋谷区恵比寿南1丁目” を入力してください。</div>
                 </div>
                 <!--番地-->
@@ -96,3 +95,15 @@
 <?php echo Asset::js('content/jquery/jquery.validationEngine.js') ?>
 <?php echo Asset::js('content/jquery/jquery.validationEngine-ja.js') ?>
 <?php echo Asset::js('content/deliveryselect.js')?>
+<script type="text/javascript" src="http://jpostal.googlecode.com/svn/trunk/jquery.jpostal.js"></script>
+<script type="text/javascript">
+    $('#postcode').jpostal({
+    	postcode : [
+    		'#postcode1',
+    		'#postcode2'
+    	],
+    	address : {
+    		'#hoge'  : '%3%4%5',
+    	}
+    });
+</script>

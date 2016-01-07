@@ -23,9 +23,16 @@
 
 /*ラジオボタン用ラベル*/
 .select-address input{
-
+    font-size: 24px;
 }
 
+#postcode1{
+    width: 3em;
+}
+
+#postcode2{
+    width: 4em;
+}
 
 .select-address td{
 
