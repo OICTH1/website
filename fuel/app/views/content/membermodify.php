@@ -34,12 +34,13 @@
         </div>
         <div class="clear"></div>
       </div>
-<div class="modify">
-    <input type="submit" value="編集完了" class="buttonlink">
+<div class="modify button">
+    <input type="submit" value="" id="sbt">
+    <label for="sbt">編集完了</label>
 </div>
     </form>
-<div class="back">
-    <?php echo Html::anchor('index.php/member','編集せず戻る',array('class'=>'buttonlink'))?>
+<div class="back button">
+    <?php echo Html::anchor('index.php/member','編集せず戻る',array('class'=>'link'))?>
 </div>
 <?php echo Asset::js('content/jquery/jquery.js') ?>
 <?php echo Asset::js('content/jquery/jquery.validationEngine.js') ?>

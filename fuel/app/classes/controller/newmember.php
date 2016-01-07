@@ -28,7 +28,23 @@ class Controller_Newmember Extends Controller_Page
 		$member->tel = $post['phone'];
 		$member->postalcode = $post['postal'];
         $member->save();
-        $this->template->content = 'commit!!';
+        $login_user = Model_Member::find('all', array(
+                                                                           'where' =>array(
+                                                                             array('mailaddress' => $post['mail']),
+                                                                             array('password' => $post['password1'])
+                                                                           )
+                                                                         )
+                                                                       );
+
+       if(!empty($login_user)){
+           \Session::set(self::SESSION_KEY_USER_ID, array_shift($login_user)->id);
+           if(empty(\Session::get(self::SESSION_KEY_CART))){
+               \Session::set(self::SESSION_KEY_CART,array('orders'=>array(),'total_money'=>0));
+           }
+           return Response::redirect('index.php/message/newmember');
+       } else {
+             return Response::redirect('index.php/auth/err');
+       }
     }
 
     public function action_edit(){

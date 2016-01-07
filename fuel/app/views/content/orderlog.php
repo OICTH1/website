@@ -39,6 +39,7 @@
                                             echo $price;
                                             ?></span>
                                         </div>
+                                        <div class="clear"></div>
                                     </div>
                                 <?php endforeach; ?>
                                 <div class="summoney">
@@ -53,8 +54,8 @@
                 </div>
               </li>
             </div>
-            <div class="back">
-                <?php echo Html::anchor('index.php/member','戻る',array('class'=>'buttonlink'))?>
+            <div class="back button">
+                <?php echo Html::anchor('index.php/member','戻る',array('class'=>'link'))?>
             </div>
 
 <?php echo Asset::js('content/jquery/jquery.js');?>

@@ -3,47 +3,37 @@
 /***** コンテンツ全体 *****/
 
 /*******見出しの所****/
-.logheading {
-    font-size: 28px;
-    padding: 6px 0;
-    border: solid 1px;
-    width: 100%;
-    text-align : center;
-    box-sizing: border-box;
-    margin-bottom: 20px;
-}
+
 
 /**********注文履歴一覧***********/
 .log{
-
-    font-size: 22px;
+    font-size: 24px;
     width: 100%;
-    min-height: 90%;
-    margin-bottom: 20px;
-    padding: 0px 10px 20px 10px;;
-    border: solid 1px;
+    margin-bottom: 30px;
+    padding: 30px;
     box-sizing: border-box;
 }
 
 .log-list{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
 
-    width: 92%;
+.log-list-item:not(:first-child){
+    margin-top: 20px;
 }
 /******詳細の内容部分*******/
 
 .title{
-
     padding: 8px;
-    margin-top: 20px;
-    height: 48px;
     width: 100%;
-    border: solid 1px;
     box-sizing: border-box;
 }
 
-.titleleft{
-    font-size: 26px;
 
+.titleleft{
+    font-size: 24px;
     width: 90%;
     white-space: nowrap;
     overflow: hidden;
@@ -108,19 +98,14 @@
 }
 
 .cart{
-
-    border: solid 1px;
     width: 100%;
-    margin-bottom: 30px;
-    box-sizing: border-box;}
+    box-sizing: border-box;
+}
 
 .cartin{
-
-    font-size: 22px;
+    font-size: 24px;
     width: 100%;
-    height: 35px;
-    padding:  5px 20px;
-    border-bottom: solid 1px;
+    padding:  5px 40px;
     box-sizing: border-box;
 }
 
@@ -128,7 +113,8 @@
     float: left;
     width: 60%;
     height: 100%;
-    text-align: center;
+    text-align: left;
+    box-sizing: border-box;
 }
 
 .num{
@@ -146,10 +132,9 @@
 
 /*合計金額*/
 .summoney{
-
     width: 100%;
-    padding: 5px 0;
-    font-size: 26px;
+    padding: 5px 40px;
+    font-size: 24px;
     text-align: right;
     box-sizing: border-box;
 }
@@ -157,7 +142,6 @@
 .sum{
     width: 20%;
     float: right;
-    text-align: center;
     box-sizing: border-box;
 }
 
@@ -185,3 +169,26 @@
     border: solid 1px;
 }
 /*********確定戻る***********/
+
+
+/*Color*/
+.log{
+    background-color: #F8EDD1;
+}
+
+.log-list-item{
+    border: solid 4px rgba(152,178,29,0.6);
+    box-sizing: border-box;
+}
+
+.title{
+    background-color: rgba(152,178,29,0.6);
+}
+
+.summoney{
+    background-color: #FEC049;
+}
+
+.cart .cartin:not(:last-child){
+    /*border-bottom: solid 4px #98B21D;*/
+}
