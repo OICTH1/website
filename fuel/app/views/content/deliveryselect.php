@@ -95,4 +95,5 @@
 <?php echo Asset::js('content/jquery/jquery.js') ?>
 <?php echo Asset::js('content/jquery/jquery.validationEngine.js') ?>
 <?php echo Asset::js('content/jquery/jquery.validationEngine-ja.js') ?>
+<?php echo Asset::js('content/jquery/ajaxzip3.js')?>
 <?php echo Asset::js('content/deliveryselect.js')?>

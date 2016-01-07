@@ -24,7 +24,7 @@
           <div class="formrightin"><span class="description">セイメイ</span><input type="text" name="kana"></div>
           <div class="formrightin">西暦　<span class="years">1900</span>　年　<span class="month">10</span>　月　<span class="days">10</span>　日　　<span class="description">（変更できません）</span></div>
           <div class="formrightin"><span class="sex">男性</span>　　　　<span class="description">（変更できません）</span></div>
-          <div class="formrightin"><input type="text" name="postal"  size="7">　　　<input type="button" name="search" value="検索" id="search">　　<span class="description">（-を含める）</span></div>
+          <div class="formrightin"><input type="text" name="postal"  size="7">　　　<input type="button" name="search" id="search" value="検索">　　<span class="description">（-を含める）</span></div>
           <div class="formrightin"><input type="text" name="address" size="40"></div>
           <div class="formrightin"><input type="text" name="phone"><span class="description">（-を含めず続けて書く）</span></div>
           <div class="formrightin"><input type="text" name="mail" size="60" class="validate[custom[email]]"></div>
@@ -45,4 +45,5 @@
 <?php echo Asset::js('content/jquery/jquery.js') ?>
 <?php echo Asset::js('content/jquery/jquery.validationEngine.js') ?>
 <?php echo Asset::js('content/jquery/jquery.validationEngine-ja.js') ?>
+<?php echo Asset::js('content/jquery/ajaxzip3.js')?>
 <?php echo Asset::js('content/newmember.js') ?>

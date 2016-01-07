@@ -10,3 +10,7 @@
     });
 
     jQuery("#other-form").validationEngine();
+
+    $('#address-search').click(function(){
+      AjaxZip3.zip2addr('postalcode','', 'address1', 'address1');
+    });
