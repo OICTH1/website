@@ -1,44 +1,34 @@
 /***** コンテンツ全体 *****/
 
-
-.header{
-    height: 20%;
-    box-sizing: border-box;
-}
-.contents{
-    padding: 10px 10px 10px 10px;
-    height: 80%;
-    box-sizing: border-box;
-}
-
 /***** コンテンツ全体 *****/
-
+.content{
+    padding: 60px 0 20px 0 ;
+    margin-bottom: 30px;
+    border-radius: 0 0 30px 30px;
+}
 /*******見出しの所****/
-.cartheading,.deliveryheading {
-    font-size: 28px;
-    padding: 6px 0;
-    border: solid 1px;
-    width: 100%;
-    text-align : center;
+.caption{
+    padding: 10px 0;
     box-sizing: border-box;
-    margin-bottom: 40px;
+    font-size: 34px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 /******ご注文内容部分*******/
 .cart{
-
-    border: solid 1px;
     width: 100%;
+    margin: 0 auto;
     box-sizing: border-box;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 
 .cartin{
-    font-size: 22px;
+    font-size: 24px;
     width: 100%;
     height: 35px;
     padding:  5px 20px;
-    border-bottom: solid 1px;
+    margin-bottom: 20px;
     box-sizing: border-box;
     display: inline-block;
 }
@@ -47,7 +37,7 @@
     float: left;
     width: 60%;
     height: 100%;
-    text-align: center;
+    
 }
 
 .num{
@@ -72,9 +62,8 @@
 /*合計金額*/
 .summoney{
     width: 100%;
-    height: 35px;
-    padding-top: 5px;
-    font-size: 26px;
+    padding: 5px 20px;
+    font-size: 24px;
     text-align: right;
     box-sizing: border-box;
 }
@@ -82,7 +71,7 @@
 .sum{
     width: 20%;
     float: right;
-    text-align: center;
+    text-align: right;
     box-sizing: border-box;
 }
 
@@ -90,52 +79,38 @@
 /**********配達先住所部分***********/
 .delivery{
 
-    font-size: 22px;
+    font-size: 24px;
     width: 100%;
+    margin: 0 auto;
     margin-bottom: 20px;
-    padding: 20px;
-    border: solid 1px;
+    padding: 0 20px;
     box-sizing: border-box;
 }
 
 .postal{
     width: 100%;
-    height: 40px;
     margin-bottom: 20px;
 }
 
 .address{
     width: 100%;
-    height: 50px;
 }
 
 /**********配達先住所部分***********/
 /*********確定戻る***********/
-.confirm{
-    font-size: 30px;
-    width: 20%;
-    margin: 2% 40% 0% 40%;
-    text-align : center;
-    border: solid 1px;
-}
-
-.back{
-    font-size: 28px;
-    width: 16%;
-    margin: 2% 42% 0% 42%;
-    text-align : center;
-    border: solid 1px;
-}
-
-.buttonlink{
-    padding: 7px;
-    display: block;
-    height: 100%;
-    width: 100%;
-    box-sizing: border-box;
-}
-.buttonlink:hover{
-    background-color: chartreuse;
-}
 
 /*********確定戻る***********/
+
+
+/*Color*/
+.content{
+    background-color: #F8EDD1;
+}
+
+.caption{
+    background-color: #FEC049;
+}
+
+.summoney{
+    background-color: #CD1D1F;
+}

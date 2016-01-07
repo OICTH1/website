@@ -23,6 +23,12 @@ class Controller_Message extends Controller_Page
 		$data['messagein'] = View::forge('message/newmember');
 	}
 
+	public function action_commit(){
+		global $data;
+		$data['title'] = '注文完了';
+		$data['messagein'] = View::forge('message/commit');
+	}
+
 	public function after($response)
     {
 		global $data;

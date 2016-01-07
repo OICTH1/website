@@ -69,6 +69,6 @@ class Controller_Order Extends Controller_Page
             $neworderline->save();
         }
         \Session::delete(self::SESSION_KEY_CART);
-        $this->template->content = View::forge('content/ordercomplete');
+        return Response::redirect('index.php/message/commit');
     }
 }

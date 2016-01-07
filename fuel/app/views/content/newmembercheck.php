@@ -28,10 +28,11 @@
         <div class="formrightin">西暦<span class="years"><?php echo $newmember['years'] ?></span>年<span class="month"><?php echo $newmember['month'] ?></span>月<span class="days"><?php echo $newmember['days'] ?></span>日</div>
         <div class="formrightin"><span class="sex"><?php if(isset($newmember['sex'])){echo $newmember['sex'].'性';} ?></span></div>
     </div>
+    <div class="clear"></div>
 </div>
-<div class="confirm">
+<div class="confirm button">
     <?php echo Html::anchor('index.php/newmember/commit','確定する',array('class'=>'link'))?>
 </div>
-<div class="modify">
+<div class="modify button">
     <?php echo Html::anchor('index.php/newmember/edit','再編集する',array('class'=>'link'))?>
 </div>
