@@ -1,12 +1,9 @@
 <?php echo Asset::css('content/ordercheck.css');?>
     <div class="heading">
-        注文確認
+        ご注文内容
     </div>
     <div class="content">
         <div class="cart">
-        <div class="caption">
-            ご注文内容
-        </div>
             <?php if(isset($cart['orders'])):?>
                 <?php foreach ($cart['orders'] as $key => $order) :?>
                     <div class="cartin">
