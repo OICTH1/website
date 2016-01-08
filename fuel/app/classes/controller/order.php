@@ -49,14 +49,16 @@ class Controller_Order Extends Controller_Page
     }
 
     public function action_commit(){
-        $user = Model_Member::find(\Session::get(self::SESSION_KEY_USER_ID));
+        $user_id = \Session::get(self::SESSION_KEY_USER_ID);
+        $user = Model_Member::find($user_id);
         $address = \Session::get(self::SESSION_KEY_ADDRESS);
         /*------make order----------------------------------------------------------*/
         $order = new Model_Order();
         $order->member_id = $user->id;
         $order->postalcode = $address['postalcode'];
         $order->destination = $address['address'] . $address['billname'] .$address['companyname'];
-        $order->order_date = date( "Y-m-d  H:i:s", time());
+        $date = date( "Y-m-d", time());
+        $order->order_date = $date;
         $order->print_flag = 0;
         $order->status = 0;
         $order->save();
@@ -64,12 +66,35 @@ class Controller_Order Extends Controller_Page
         /*-----make orderline------------------------*/
         $cart = \Session::get(self::SESSION_KEY_CART);
         foreach ($cart['orders'] as $orderline) {
+            $item_id = $orderline['item_id'];
+            $num = $orderline['quantity'];
+            $size = $orderline['size'];
             $neworderline = new Model_Orderline();
             $neworderline->order_id = $order->id;
-            $neworderline->item_id = $orderline['item_id'];
-            $neworderline->num = $orderline['quantity'];
-            $neworderline->size = $orderline['size'];
+            $neworderline->item_id = $item_id;
+            $neworderline->num = $num;
+            $neworderline->size = $size;
             $neworderline->save();
+
+            $earning = new Model_Earning();
+            $earning->member_id = $user->id;
+            $earning->item_id = $item_id;
+            switch ($size) {
+                case 'S':
+                    $unit_price = $orderline->item->unit_price_s;
+                    break;
+                case 'M':
+                    $unit_price = $orderline->item->unit_price_m;
+                    break;
+                case 'L':
+                    $unit_price = $orderline->item->unit_price_m;
+                    break;
+                default:
+                    $unit_price = $orderline->item->unit_price;
+                    break;
+            }
+            $earning->unit_price = $unit_price;
+            $earning->date = $date;
         }
         \Session::delete(self::SESSION_KEY_CART);
         return Response::redirect('index.php/message/commit');

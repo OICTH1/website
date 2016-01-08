@@ -15,7 +15,9 @@ class Controller_Member Extends Controller_Page
     }
 
     public function action_edit(){
-        $this->template->content = View::forge('content/membermodify');
+        $user_id = \Session::get(self::SESSION_KEY_USER_ID);
+        $data['user'] = Model_Member::find($user_id);
+        $this->template->content = View::forge('content/membermodify',$data);
     }
 
     public function action_editcommit(){

@@ -30,7 +30,7 @@
           <div class="formrightin"><input type="text" name="address" size="40"></div>
           <div class="formrightin"><input type="text" name="phone"><span class="description">（-を含めず続けて書く）</span></div>
           <div class="formrightin"><input type="text" name="mail" size="60" class="validate[custom[email]]"></div>
-          <div class="formrightin"></div>
+          <div class="formrightin"><?php echo $user->mailaddress ?></div>
           <div class="formrightin"><input type="password" id="pass1" name="pass1" size="50" class="validate[minSize[8]"><span class="description">（8文字以上）</span></div>
           <div class="formrightin"><input type="password" name="pass2" size="50" class="validate[equals[pass1]]"></div>
         </div>
