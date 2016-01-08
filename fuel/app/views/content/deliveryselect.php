@@ -51,19 +51,13 @@
                 <div class="form-address-1">
                     <div class="form-label required">住所　[必須]</div>
                     <div class="form-input"><input type="text" name="address1" value="" class="validate[required]"></div>
-                  <div class="form-describe">【例】東京都渋谷区恵比寿南1丁目2-3の場合、”東京都渋谷区恵比寿南1丁目” を入力してください。</div>
+                  <div class="form-describe">【例】東京都渋谷区恵比寿南1丁目2-3の場合、”東京都渋谷区恵比寿南” を入力してください。</div>
                 </div>
                 <!--番地-->
                 <div class="form-address-2">
-                  <div class="form-label required">番地　[必須]</div>
+                  <div class="form-label required">番地以降　[必須]</div>
                     <div class="form-input"><input type="text" name="address2" value="" class="validate[required]"></div>
-                  <div class="form-describe">【例】東京都渋谷区恵比寿南1丁目2-3の場合、”2” を入力してください。</div>
-                </div>
-                <!--号-->
-                <div class="form-address-3">
-                    <div class="form-label">号　[必須]</div>
-                    <div class="form-input"><input type="text" name="address3" value="" class="validate[required]"></div>
-                  <div class="form-describe">【例】東京都渋谷区恵比寿南1丁目2-3の場合、”3” を入力してください。</div>
+                  <div class="form-describe">【例】東京都渋谷区恵比寿南1丁目2-3の場合、”1丁目2-3” を入力してください。</div>
                 </div>
                 <h3>マンション、ビル、アパートの場合</h3><br/>
                 <!--建物名-->
