@@ -8,7 +8,7 @@
                 <?php foreach ($cart['orders'] as $key => $order) :?>
                     <div class="cartin">
                         <div class="name">
-                            <span><?php echo $order['item_name']?></span><span>(<?php echo $order['size']?>)</span>
+                            <span><?php echo $order['item_name']?></span><span><?php if($order['size'] != ""){echo '('.$order['size'].')';}?></span>
                         </div>
                         <div class="num">
                             数量<span><?php echo $order['quantity']?></span>
