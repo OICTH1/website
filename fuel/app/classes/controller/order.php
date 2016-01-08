@@ -7,6 +7,9 @@ class Controller_Order Extends Controller_Page
           if(empty(\Session::get(self::SESSION_KEY_USER_ID))){
             return Response::redirect('index.php/auth/index/true');
           }
+          if(empty(\Session::get(self::SESSION_KEY_CART))){
+            return Response::redirect('index.php/message/cartempty');
+          }
     }
 
     public function action_delivery(){
