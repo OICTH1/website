@@ -28,18 +28,18 @@
             <?php echo Form::open(array('action' => 'index.php/cart/add', 'method' => 'post'))?>
         <?php endif;?>
         <?php echo Form::hidden('item_id',$detail['item_id'])?>
-        <?php if(!($detail['prices']['unit_price'] != null)):?>
     </div>
-    <div class="size">
-      <div class="sizeheading">
-        サイズ
-      </div>
-      <div class="sizein">
-              <div class="s"><label>Sサイズ<br><input type="radio" name="size" value="_s" checked></label></div>
-              <div class="m"><label>Mサイズ<br><input type="radio" name="size" value="_m"></label></div>
-              <div class="l"><label>Lサイズ<br><input type="radio" name="size" value="_l"></label></div>
-      </div>
-    </div>
+    <?php if(!($detail['prices']['unit_price'] != null)):?>
+        <div class="size">
+          <div class="sizeheading">
+            サイズ
+          </div>
+          <div class="sizein">
+                  <div class="s"><label>Sサイズ<br><input type="radio" name="size" value="_s" checked></label></div>
+                  <div class="m"><label>Mサイズ<br><input type="radio" name="size" value="_m"></label></div>
+                  <div class="l"><label>Lサイズ<br><input type="radio" name="size" value="_l"></label></div>
+          </div>
+        </div>
     <?php endif;?>
     <div class="select">
       <div class="selectleft">
