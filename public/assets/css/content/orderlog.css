@@ -12,6 +12,7 @@
     margin-bottom: 30px;
     padding: 30px;
     box-sizing: border-box;
+        border-radius: 0 0 30px 30px;
 }
 
 .log-list{
