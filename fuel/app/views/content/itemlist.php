@@ -14,9 +14,9 @@
 			<?php $i = 0;foreach ( $item_list as $item) :?>
 			<?php if($i % 3 == 0){echo '<div class="listrow">';}?>
 	            <div class="listitem">
-	                <div class="img">
+	                <div class="img imglink">
 	                  <?php echo Asset::img($item['img_path']);?>
-					  <?php echo Html::anchor('index.php/item/detail/' . $item['item_id'],'',array('class'=>'imglink'))?>
+					  <?php echo Html::anchor('index.php/item/detail/' . $item['item_id'],'',array())?>
 	                </div>
 	                <div class="pizzaname"><?php echo $item['item_name']?></div>
 					<div class="pricelist">

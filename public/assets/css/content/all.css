@@ -7,7 +7,11 @@ a.link{
    box-sizing: border-box;
 }
 
-a.imglink{
+.imglink{
+    position: relative;
+}
+
+.imglink > a{
     display: block;
     width: 100%;
     height: 100%;
