@@ -1,7 +1,7 @@
 <?php echo Asset::css('content/itemlist.css');?>
 <div class="contents">
 	<div class="heading">
-		<?php echo $category . 'メニュー' ?>
+		<?php echo $category ?>
 	</div>
 	<div class="category">
 		<ul>
