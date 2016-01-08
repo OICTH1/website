@@ -29,6 +29,12 @@ class Controller_Message extends Controller_Page
 		$data['messagein'] = View::forge('message/commit');
 	}
 
+	public function action_pizzadoko(){
+		global $data;
+		$data['title'] = '私のピザは今どこ？';
+		$data['messagein'] = View::forge('message/pizzadoko');
+	}
+
 	public function after($response)
     {
 		global $data;
