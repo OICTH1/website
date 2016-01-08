@@ -29,7 +29,7 @@ class Controller_Order Extends Controller_Page
 
             case 'other':
                 $address['postalcode'] = $_POST['postalcode'];
-                $input_address = $_POST['address1'] . $_POST['address2'] . $_POST['address3'];
+                $input_address = $_POST['address1'] . $_POST['address2'];
                 $address['address'] = $input_address;
                 $address['billname'] = $_POST['billname'];
                 $address['companyname'] = $_POST['companyname'];
