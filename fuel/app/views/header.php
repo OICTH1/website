@@ -30,7 +30,7 @@
                   <ul class="navi-list">
                     <li><?php echo Html::anchor('index.php/top','TOP',array('class'=>'link'))?></li>
                     <li><?php echo Html::anchor('index.php/item/list','メニュー',array('class'=>'link'))?></li>
-                    <li><a href="#">ピザどこ？</a></li>
+                    <li><?php echo Html::anchor('index.php/message/pizzadoko','ピザどこ？',array('class'=>'link'))?></li>
                   </ul>
                 </div>
             </div>
