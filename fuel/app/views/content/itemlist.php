@@ -16,6 +16,7 @@
 	            <div class="listitem">
 	                <div class="img">
 	                  <?php echo Asset::img($item['img_path']);?>
+					  <?php echo Html::anchor('index.php/item/detail/' . $item['item_id'],'',array('class'=>'imglink'))?>
 	                </div>
 	                <div class="pizzaname"><?php echo $item['item_name']?></div>
 					<div class="pricelist">
