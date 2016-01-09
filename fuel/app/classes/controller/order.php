@@ -48,6 +48,7 @@ class Controller_Order Extends Controller_Page
         $this->template->content = View::forge('content/ordercheck',$data);
     }
 
+
     public function action_commit(){
         $user_id = \Session::get(self::SESSION_KEY_USER_ID);
         $user = Model_Member::find($user_id);
@@ -79,24 +80,32 @@ class Controller_Order Extends Controller_Page
             $earning = new Model_Earning();
             $earning->member_id = $user->id;
             $earning->item_id = $item_id;
+            $earning->size = $size;
             switch ($size) {
                 case 'S':
-                    $unit_price = $orderline->item->unit_price_s;
+                    $unit_price = $neworderline->item->unit_price_s;
                     break;
                 case 'M':
-                    $unit_price = $orderline->item->unit_price_m;
+                    $unit_price = $neworderline->item->unit_price_m;
                     break;
                 case 'L':
-                    $unit_price = $orderline->item->unit_price_m;
+                    $unit_price = $neworderline->item->unit_price_m;
                     break;
                 default:
-                    $unit_price = $orderline->item->unit_price;
+                    $unit_price = $neworderline->item->unit_price;
                     break;
             }
             $earning->unit_price = $unit_price;
+            $earning->num = $num;
             $earning->date = $date;
+            $now = date('Ymd');
+            $birthday = date('Ymd',strtotime($user->birthday));
+            $earning->age = (int)floor(($now-$birthday)/10000);
+            $earning->save();
+
         }
         \Session::delete(self::SESSION_KEY_CART);
         return Response::redirect('index.php/message/commit');
     }
+
 }
