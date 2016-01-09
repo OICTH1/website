@@ -138,6 +138,14 @@
 	box-sizing: border-box;
 }
 
+.selectcenter > div{
+	float: left;
+}
+#money{
+	width: 3.5em;
+	text-align: right;
+}
+
 .selectright{
 	/*background-image: url("../img/cart.png");*/
 	background-size: contain;

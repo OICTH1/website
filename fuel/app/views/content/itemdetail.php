@@ -52,7 +52,7 @@
         </select>
       </div>
       <div class="selectcenter">
-              ご注文金額　<span id="money">5000</span>円
+              <div>ご注文金額</div><div id="money">5000</div><div>円</div>
               <input type="hidden" id="form-money" name="money">
       </div>
       <div class="selectright">
