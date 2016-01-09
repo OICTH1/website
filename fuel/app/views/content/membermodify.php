@@ -12,6 +12,7 @@
         <div class="formleftin">性別</div>
         <div class="formleftin">郵便番号</div>
         <div class="formleftin">住所</div>
+        <div class="formleftin">番地以降</div>
         <div class="formleftin">電話番号</div>
         <div class="formleftin">新しいメールアドレス</div>
         <div class="formleftin">現在のメールアドレス</div>
@@ -27,7 +28,8 @@
 
           <div class="formrightin"><input type="text" name="postal"  size="7">　　　<input type="button" name="search" id="search" value="検索">　　<span class="description">（-を含める）</span></div>
 
-          <div class="formrightin"><input type="text" name="address" size="40"></div>
+          <div class="formrightin"><input type="text" name="address1" size="40"></div>
+          <div class="formrightin"><input type="text" name="address2" size="30"></div>
           <div class="formrightin"><input type="text" name="phone"><span class="description">（-を含めず続けて書く）</span></div>
           <div class="formrightin"><input type="text" name="mail" size="60" class="validate[custom[email]]"></div>
           <div class="formrightin"><?php echo $user->mailaddress ?></div>

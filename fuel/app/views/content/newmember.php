@@ -12,7 +12,8 @@
         <div class="formleftin">名前　[必須]<br></div>
         <div class="formleftin">フリガナ　[必須]<br></div>
         <div class="formleftin">郵便番号　[必須]</div>
-        <div class="formleftin">住所　[必須]</div>
+        <div class="formleftin br">住所　[必須]</div>
+        <div class="formleftin br">番地以降　[必須]</div>
         <div class="formleftin">電話番号　[必須]</div>
         <div class="formleftin">生年月日　[必須]</div>
         <div class="formleftin">性別　[必須]</div>
@@ -31,7 +32,8 @@
 
             <div class="formrightin"><input type="text" name="postal"  size="7" class="validate[required]" value=<?php if($flag){echo $editing['postal'];} ?>><input type="button" name="search" id="search" value="検索"><span class="description">（-を含める）</span></div>
 
-            <div class="formrightin"><input type="text" name="address" size="40" class="validate[required]" value=<?php if($flag){echo $editing['address'];} ?>></div>
+            <div class="formrightin br"><input type="text" name="address1" size="40" class="validate[required]" value=<?php if($flag){echo $editing['address1'];} ?>></br><span class="description">【例】東京都渋谷区恵比寿南1丁目2-3の場合、”東京都渋谷区恵比寿南” を入力してください。</span></div>
+            <div class="formrightin br"><input type="text" name="address2" size="30" class="validate[required]" value=<?php if($flag){echo $editing['address2'];} ?>></br><span class="description">【例】東京都渋谷区恵比寿南1丁目2-3の場合、”1丁目2-3” を入力してください。</span></div>
 
             <div class="formrightin"><input type="text" name="phone" class="validate[custom[phone],required]" value=<?php if($flag){echo $editing['phone'];} ?>><span class="description">（-を含める）</span></div>
 
@@ -40,7 +42,9 @@
                 <input type="text" name="days" size="2" class="validate[required,custom[integer],min[1],max[31]]" value=<?php if($flag){echo $editing['days'];} ?>>日<span class="description"> （会員登録後の変更はできません）</span></div>
 
             <div class="formrightin"><label><input type="radio" name="sex" value="男" class="validate[required]" <?php if($flag && isset($editing['sex']) && $editing['sex'] == "男" ){echo 'checked';} ?>>男性</label>　
-                <label><input type="radio" name="sex" value="女" class="validate[required]" <?php if($flag && isset($editing['sex']) && $editing['sex'] == "女" ){echo 'checked';} ?>>女性<span class="description">会員登録後の変更はできません</span></div></label>
+                <label><input type="radio" name="sex" value="女" class="validate[required]" <?php if($flag && isset($editing['sex']) && $editing['sex'] == "女" ){echo 'checked';} ?>>女性<span class="description">会員登録後の変更はできません</span></label></div>
+</div>
+<div class="clear"></div>
 </div>
 <div class="clear"></div>
 </div>

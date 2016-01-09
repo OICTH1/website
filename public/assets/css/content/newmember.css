@@ -33,7 +33,7 @@
 
 .formrightin,.formleftin{
     height: 40px;
-    padding: 5px 0px;
+    padding: 8px 0px;
 }
 
 .formrightin input{
@@ -43,7 +43,15 @@
 .description {
     padding-left: 20px;
     font-size: 14px;
+    box-sizing: border-box;
     text-decoration: underline;
+}
+.br {
+    padding-bottom: 14px;
+}
+
+.clear{
+  clear: both;
 }
 
 /**********配達先住所部分***********/
