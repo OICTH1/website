@@ -35,9 +35,9 @@
 
             <div class="formrightin"><input type="text" name="phone" class="validate[custom[phone],required]" value=<?php if($flag){echo $editing['phone'];} ?>><span class="description">（-を含める）</span></div>
 
-            <div class="formrightin">西暦<input type="text" name="years" size="4" class="validate[required]" value=<?php if($flag){echo $editing['years'];} ?>>年
-                <input type="text" name="month" size="2" class="validate[required]" value=<?php if($flag){echo $editing['month'];} ?>>月
-                <input type="text" name="days" size="2" class="validate[required]" value=<?php if($flag){echo $editing['days'];} ?>>日<span class="description"> （会員登録後の変更はできません）</span></div>
+            <div class="formrightin">西暦<input type="text" name="years" size="4" class="validate[required,minSize[4]],maxSize[4]" value=<?php if($flag){echo $editing['years'];} ?>>年
+                <input type="text" name="month" size="2" class="validate[required,custom[integer],min[1],max[12]]" value=<?php if($flag){echo $editing['month'];} ?>>月
+                <input type="text" name="days" size="2" class="validate[required,custom[integer],min[1],max[31]]" value=<?php if($flag){echo $editing['days'];} ?>>日<span class="description"> （会員登録後の変更はできません）</span></div>
 
             <div class="formrightin"><label><input type="radio" name="sex" value="男" class="validate[required]" <?php if($flag && isset($editing['sex']) && $editing['sex'] == "男" ){echo 'checked';} ?>>男性</label>　
                 <label><input type="radio" name="sex" value="女" class="validate[required]" <?php if($flag && isset($editing['sex']) && $editing['sex'] == "女" ){echo 'checked';} ?>>女性<span class="description">会員登録後の変更はできません</span></div></label>
