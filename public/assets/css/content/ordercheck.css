@@ -2,9 +2,7 @@
 
 /***** コンテンツ全体 *****/
 .content{
-    padding: 20px 0 20px 0 ;
     margin-bottom: 30px;
-    border-radius: 0 0 30px 30px;
 }
 /*******見出しの所****/
 .caption{
@@ -18,6 +16,7 @@
 .cart{
     width: 100%;
     margin: 0 auto;
+    padding-top: 30px;
     box-sizing: border-box;
     margin-bottom: 30px;
 }
@@ -66,6 +65,7 @@
     font-size: 28px;
     text-align: right;
     box-sizing: border-box;
+    border-radius: 0 0 30px 30px;
 }
 
 .sum{
@@ -73,6 +73,7 @@
     float: right;
     text-align: right;
     box-sizing: border-box;
+
 }
 
 /******ご注文内容部分*******/
@@ -83,8 +84,9 @@
     width: 100%;
     margin: 0 auto;
     margin-bottom: 20px;
-    padding: 0 20px;
+    padding: 30px 20px;
     box-sizing: border-box;
+    border-radius: 0 0 30px 30px;
 }
 
 .postal{
@@ -106,7 +108,11 @@
 
 /*Color*/
 .content{
+}
+
+.cart,.delivery{
     background-color: #F8EDD1;
+    border-radius: 0 0 30px 30px;
 }
 
 .caption{

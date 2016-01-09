@@ -1,8 +1,8 @@
 <?php echo Asset::css('content/ordercheck.css');?>
-    <div class="heading">
-        ご注文内容
-    </div>
     <div class="content">
+        <div class="heading">
+            ご注文内容
+        </div>
         <div class="cart">
             <?php if(isset($cart['orders'])):?>
                 <?php foreach ($cart['orders'] as $key => $order) :?>
@@ -27,7 +27,7 @@
             </div>
         </div>
 
-        <div class="caption">
+        <div class="heading">
             配達先
         </div>
         <div class="delivery">
