@@ -11,7 +11,9 @@
         </div><br>
         <div class="formitem">
             <div class="itemleft">パスワード</div>
-            <div class="itemright"><span class="password"><?php echo $user['password']?></span></div>
+            <div class="itemright"><span class="password"><?php for ($i=0; $i < strlen($user['password']); $i++) {
+                echo '*';
+            }?></span></div>
         </div><br>
         <div class="formitem">
             <div class="itemleft">名前</div>
