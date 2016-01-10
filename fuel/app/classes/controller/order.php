@@ -58,7 +58,7 @@ class Controller_Order Extends Controller_Page
         $order->member_id = $user->id;
         $order->postalcode = $address['postalcode'];
         $order->destination = $address['address'] . $address['billname'] .$address['companyname'];
-        $date =  time());
+        $date =  time();
         $order->order_date = $date;
         $order->print_flag = 0;
         $order->status = 0;
