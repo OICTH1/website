@@ -51,6 +51,7 @@ class Controller_Member Extends Controller_Page
         $this->template->content = View::forge('content/orderlog',$data);
     }
 
+
     public function action_new(){
         $this->template->content = View::forge('content/newmember');
     }

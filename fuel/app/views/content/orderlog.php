@@ -47,6 +47,9 @@
                                     <div class="sum">
                                         <span><?php echo $total_money?></span>円
                                     </div>
+                                    <div class="button">
+                                        <?php echo Html::anchor('index.php/cart/historyin/' . $order['id'],'カートに入れる')?>
+                                    </div>
                                 </div>
                     <?php endforeach; ?>
                     <div style="clear:both"></div>
