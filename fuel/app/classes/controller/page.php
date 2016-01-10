@@ -16,13 +16,16 @@ class Controller_Page Extends Controller_Template
       if(!empty(\Session::get(self::SESSION_KEY_USER_ID))){
         $id = \Session::get(self::SESSION_KEY_USER_ID);
         $member = Model_Member::find($id);
+        if(empty($member)){
+            \Session::delete(self::SESSION_KEY_USER_ID);
+        }
         $this->template->member = array(
-                                                          'name'=>$member->name
-                                                        );
+                     'name'=>$member->name
+        );
     } else {
       $this->template->member = false;
     }
 
-      }
+    }
   }
 ?>
