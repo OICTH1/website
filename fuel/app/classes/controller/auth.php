@@ -43,6 +43,7 @@ class Controller_Auth Extends Controller_Page
 
     public function action_logout(){
         \Session::delete(self::SESSION_KEY_USER_ID);
+        \Session::delete(self::SESSION_KEY_CART);
         return Response::redirect('index.php/top');
     }
 }
