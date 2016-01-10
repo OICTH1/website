@@ -22,8 +22,8 @@
         }?></span></div>
         <div class="formrightin"><span class="name"><?php echo $newmember['name'] ?></span></div>
         <div class="formrightin"><span class="name_kana"><?php echo $newmember['kana'] ?></span></div>
-        <div class="formrightin"><span class="postal"><?php echo $newmember['postal'] ?></span></div>
-        <div class="formrightin"><span class="address"><?php echo $newmember['address'] ?></span></div>
+        <div class="formrightin">〒<span class="postal"><?php echo $newmember['postal'] ?></span></div>
+        <div class="formrightin"><span class="address"><?php echo $newmember['address1'] . $newmember['address2'] ?></span></div>
         <div class="formrightin"><span class="phone"><?php echo $newmember['phone'] ?></span></div>
         <div class="formrightin">西暦<span class="years"><?php echo $newmember['years'] ?></span>年<span class="month"><?php echo $newmember['month'] ?></span>月<span class="days"><?php echo $newmember['days'] ?></span>日</div>
         <div class="formrightin"><span class="sex"><?php if(isset($newmember['sex'])){echo $newmember['sex'].'性';} ?></span></div>

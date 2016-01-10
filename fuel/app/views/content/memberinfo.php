@@ -23,7 +23,7 @@
         </div><br>
         <div class="formitem">
             <div class="itemleft">郵便番号</div>
-            <div class="itemright"><span class="postal"><?php echo $user['postalcode']?></span></div>
+            <div class="itemright">〒<span class="postal"><?php echo $user['postalcode']?></span></div>
         </div><br>
         <div class="formitem">
             <div class="itemleft">住所　</div>

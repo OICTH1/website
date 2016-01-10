@@ -22,7 +22,7 @@ class Controller_Newmember Extends Controller_Page
         $member->phonetic = $post['kana'];
 		$member->sex = $post['sex'];
 		$member->birthday = $post['years'] . '-' . $post['month'] . '-' . $post['days'];
-		$member->address = $post['address'];
+		$member->address = $post['address1'] . $post['address2'];
 		$member->mailaddress = $post['mail'];
 		$member->password = $post['password1'];
 		$member->tel = $post['phone'];

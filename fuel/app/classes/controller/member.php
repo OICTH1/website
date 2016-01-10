@@ -24,17 +24,18 @@ class Controller_Member Extends Controller_Page
         $user_id = \Session::get(self::SESSION_KEY_USER_ID);
         $user = Model_Member::find($user_id);
         $keys = array(
-            'name'=>'name',
-            'kana'=>'phonetic',
-            'postal'=>'postalcode',
-            'address'=>'address',
-            'mail'=>'mailaddress',
-            'phone' => 'tel',
-            'pass2'=>'password',
+            'name' => $_POST['name'],
+            'phonetic' => $_POST['kana'],
+            'postalcode' => $_POST['postal'],
+            'address'=> $_POST['address1'] . $_POST['address2'],
+            'mailaddress' => $_POST['mail'],
+            'tel' => $_POST['phone'],
+            'password' => $_POST['pass2'],
         );
         foreach ($keys as $key => $value) {
-            if($_POST[$key] != ''){
-                $user[$value] = $_POST[$key];
+            if($value != ''){
+
+                $user[$key] = $value;
             }
         }
         $user->save();
