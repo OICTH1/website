@@ -98,7 +98,7 @@ class Controller_Order Extends Controller_Page
             $earning->unit_price = $unit_price;
             $earning->num = $num;
             $earning->date = date('Y-m-d H:i:s',$date);
-            $now = date();
+            $now = date('Ymd');
             $birthday = date('Ymd',strtotime($user->birthday));
             $earning->age = (int)floor(($now-$birthday)/10000);
             $earning->save();
