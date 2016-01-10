@@ -59,7 +59,7 @@ class Controller_Order Extends Controller_Page
         $order->postalcode = $address['postalcode'];
         $order->destination = $address['address'] . $address['billname'] .$address['companyname'];
         $date =  time();
-        $order->order_date = $date;
+        $order->order_date = date('Y-m-d H:m:s',$date);
         $order->print_flag = 0;
         $order->status = 0;
         $order->save();
@@ -97,7 +97,7 @@ class Controller_Order Extends Controller_Page
             }
             $earning->unit_price = $unit_price;
             $earning->num = $num;
-            $earning->date = $date;
+            $earning->date = date('Y-m-d H:m:s',$date);
             $now = date('Ymd');
             $birthday = date('Ymd',strtotime($user->birthday));
             $earning->age = (int)floor(($now-$birthday)/10000);
