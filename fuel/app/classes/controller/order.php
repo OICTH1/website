@@ -68,6 +68,7 @@ class Controller_Order Extends Controller_Page
         $cart = \Session::get(self::SESSION_KEY_CART);
         foreach ($cart['orders'] as $orderline) {
             $item_id = $orderline['item_id'];
+            $item = Model_Item::find($item_id);
             $num = $orderline['quantity'];
             $size = $orderline['size'];
             $neworderline = new Model_Orderline();
@@ -98,6 +99,8 @@ class Controller_Order Extends Controller_Page
             $earning->unit_price = $unit_price;
             $earning->num = $num;
             $earning->date = date('Y-m-d H:i:s',$date);
+            $earning->category = $item->category;
+            $earning->item_name = $item->name;
             $now = date('Ymd');
             $birthday = date('Ymd',strtotime($user->birthday));
             $earning->age = (int)floor(($now-$birthday)/10000);
