@@ -27,13 +27,13 @@
 
             <div class="formrightin"><input type="password" name="password2" size="50" class="validate[required,equals[password1]]"></div>
 
-            <div class="formrightin"><input type="text" name="name" class="validate[required]" value=<?php if($flag){echo $editing['name'];} ?>><span class="description" >姓名</span></div>
-            <div class="formrightin"><input type="text" name="kana" class="validate[required]" value=<?php if($flag){echo $editing['kana'];} ?>><span class="description" >セイメイ</span></div>
+            <div class="formrightin"><input type="text" name="name" class="validate[required,maxSize[20]]" value=<?php if($flag){echo $editing['name'];} ?>><span class="description" >姓名</span></div>
+            <div class="formrightin"><input type="text" name="kana" class="validate[required,maxSize[25]]" value=<?php if($flag){echo $editing['kana'];} ?>><span class="description" >セイメイ</span></div>
 
-            <div class="formrightin">〒<input type="text" name="postal"  size="7" class="validate[required]" value=<?php if($flag){echo $editing['postal'];} ?>><input type="button" name="search" id="search" value="検索"><span class="description">（-を含める）</span></div>
+            <div class="formrightin"><input type="text" name="postal"  size="7" class="validate[required]" value=<?php if($flag){echo $editing['postal'];} ?>><input type="button" name="search" id="search" value="検索"><span class="description">（-を含める）</span></div>
 
-            <div class="formrightin br"><input type="text" name="address1" size="40" class="validate[required]" value=<?php if($flag){echo $editing['address1'];} ?>></br><span class="description">【例】東京都渋谷区恵比寿南1-2-3の場合、”東京都渋谷区恵比寿南” を入力してください。</span></div>
-            <div class="formrightin br"><input type="text" name="address2" size="30" class="validate[required]" value=<?php if($flag){echo $editing['address2'];} ?>></br><span class="description">【例】東京都渋谷区恵比寿南1-2-3の場合、”1-2-3” を入力してください。</span></div>
+            <div class="formrightin br"><input type="text" name="address1" size="40" class="validate[required]" value=<?php if($flag){echo $editing['address1'];} ?>></br><span class="description">【例】東京都渋谷区恵比寿南1丁目2-3の場合、”東京都渋谷区恵比寿南” を入力してください。</span></div>
+            <div class="formrightin br"><input type="text" name="address2" size="30" class="validate[required]" value=<?php if($flag){echo $editing['address2'];} ?>></br><span class="description">【例】東京都渋谷区恵比寿南1丁目2-3の場合、”1丁目2-3” を入力してください。</span></div>
 
             <div class="formrightin"><input type="text" name="phone" class="validate[custom[phone],required]" value=<?php if($flag){echo $editing['phone'];} ?>><span class="description">（-を含める）</span></div>
 

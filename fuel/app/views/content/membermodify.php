@@ -21,8 +21,8 @@
     </div>
     <div class="formright">
         <?php echo Form::open(array('action'=>'index.php/member/editcommit','method'=>'post','id'=>'formin')) ?>
-          <div class="formrightin"><span class="description">姓　名</span><input type="text" name="name"></div>
-          <div class="formrightin"><span class="description">セイメイ</span><input type="text" name="kana"></div>
+          <div class="formrightin"><span class="description">姓　名</span><input type="text" name="name" class="validate[maxSize[20]"></div>
+          <div class="formrightin"><span class="description">セイメイ</span><input type="text" name="kana" class="validate[maxSize[25]"></div>
           <div class="formrightin">西暦　<span class="years"><?php $birthday = explode('-',$user->birthday);echo $birthday[0]?></span>　年　<span class="month"><?php echo $birthday[1]?></span>　月　<span class="days"><?php echo $birthday[2]?></span>　日　　<span class="description">（変更できません）</span></div>
           <div class="formrightin"><span class="sex"><?php echo $user->sex ?>性</span>　　　　<span class="description">（変更できません）</span></div>
 
