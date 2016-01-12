@@ -42,7 +42,7 @@
                 <div class="form-postal">
                     <div class="form-label required">郵便番号　[必須]</div>
                     <div class="form-input">
-                        <input type="text" name="postalcode" value="" class="validate[required]">
+                        <input type="text" name="postalcode" value="" class="validate[required]" maxlength="8">
                     <input type="button" name="address-search" value="自動検索" id="address-search">
                   </div>
                   <div class="form-describe">-を含む   【例】123-4567</div>
