@@ -42,6 +42,11 @@
   text-align: center;
 }
 
+label > .labe{
+  height: 100%;
+  width: 100%;
+}
+
 /*選択詳細*/
 .select-address td:nth-child(2){
   padding: 10px;

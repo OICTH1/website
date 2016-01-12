@@ -14,10 +14,11 @@
     <table>
         <!--==========登録している住所=====================-->
       <tr>
-        <td>
+        <td><label class="labe" for="select-address">
             <input type="radio" name="select-address" value="registered" id="select-address" checked>
+        </label></td>
         <td>
-          <h3>登録している住所に配達する</h3>
+          <label for="select-address"><h3 class="close">登録している住所に配達する</h3></label>
           <div id="registered-address">
             <div id="postal">
               <span>〒</span><span id="postal-code"><?php echo $user['postalcode']?></span>
@@ -25,16 +26,15 @@
             <div id="address1">
               <?php echo $user['address']?>
             </div>
-
           </div>
         </td>
       </tr>
       <tr>
-        <td>
+        <td><label class="labe" for="select-other">
           <input type="radio" name="select-address" value="other" id="select-other">
-        </td>
+        </label></td>
         <td>
-          <h3>住所を指定して配達する</h3>
+          <label for="select-other"><h3 class="open">住所を指定して配達する</h3></label>
 
              <div class="other-form" id="other-form">
 
