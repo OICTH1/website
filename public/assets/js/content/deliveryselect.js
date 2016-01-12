@@ -9,6 +9,8 @@
         }
     });
 
+
+
     jQuery("#other-form").validationEngine();
 
     $('#address-search').click(function(){
