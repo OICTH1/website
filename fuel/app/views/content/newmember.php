@@ -50,7 +50,7 @@
 </div>
 <div class="confirmation button">
     <input type="submit" value="" class="biglink" id="sbt">
-    <label for="sbt">確認画面へ</label>
+    <label for="sbt">確認</label>
 </div>
 <?php echo Form::close() ?>
 <div class="back button">
