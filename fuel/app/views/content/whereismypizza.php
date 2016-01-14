@@ -77,9 +77,6 @@
         <div id="map-canvas">ここに地図が表示されます</div>
     </div>
 </div>
-<div class="confirm">
-    <a class="buttonlink">確定</a>
-</div>
 <div class="back">
     <a class="buttonlink">戻る</a>
 </div>

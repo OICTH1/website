@@ -7,5 +7,5 @@
     <?php echo $messagein ?>
 </div>
 <div class="top button">
-    <?php echo Html::anchor('index.php/top','TOPページに戻る',array('class'=>'link'))?>
+    <?php echo Html::anchor('index.php/top','TOPに戻る',array('class'=>'link'))?>
 </div>

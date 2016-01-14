@@ -31,6 +31,6 @@
         <?php echo Html::anchor('index.php/newmember','新規会員登録はこちら',array('class'=>'link'))?>
     </div>
     <div class="return-top button">
-        <?php echo Html::anchor('index.php/top','トップページへ戻る',array('class'=>'link'))?>
+        <?php echo Html::anchor('index.php/top','TOPへ戻る',array('class'=>'link'))?>
     </div>
 </div>

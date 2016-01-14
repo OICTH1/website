@@ -67,6 +67,6 @@
   </div>
 </div>
 <div class="button">
-  <?php echo Html::anchor('index.php/item/list/'.$detail['category'],'一覧へ戻る',array('class'=>'link'))?>
+  <?php echo Html::anchor('index.php/item/list/'.$detail['category'],'メニューへ戻る',array('class'=>'link'))?>
 </div>
 <?php echo Asset::js('content/itemdetail.js')?>
