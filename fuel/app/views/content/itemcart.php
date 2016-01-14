@@ -1,10 +1,7 @@
 <?php echo Asset::css('content/itemcart.css');?>
-
-    <title>商品カート</title>
-
     <div class="contents">
         <div class="heading">
-            ご注文内容
+            カート
         </div>
         <div class="cart">
             <div class="orders">

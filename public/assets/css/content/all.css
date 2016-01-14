@@ -25,12 +25,15 @@ a.link{
 
 
 .button{
-    cursor: pointer;
     width: 30%;
     margin: 0 auto;
     text-align : center;
     background-color: #2F291B;
     border-radius: 40px;
+}
+
+.button *{
+    cursor: pointer;
 }
 
 

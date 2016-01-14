@@ -31,7 +31,7 @@
     <div class="clear"></div>
 </div>
 <div class="confirm button">
-    <?php echo Html::anchor('index.php/newmember/commit','確定する',array('class'=>'link'))?>
+    <?php echo Html::anchor('index.php/newmember/commit','登録',array('class'=>'link'))?>
 </div>
 <div class="modify button">
     <?php echo Html::anchor('index.php/newmember/edit','再編集する',array('class'=>'link'))?>
