@@ -27,7 +27,7 @@
 				   		<?php endif;?>
 					</div>
 		            <div class="zei">(税込)</div>
-	                <div class="description"><?php echo $item['explanatory']?></div>
+	                <!--<div class="description"><?php echo $item['explanatory']?></div>-->
 	                <div class="syousai">
 						<?php echo Html::anchor('index.php/item/detail/' . $item['item_id'],'詳細を見る',array('class'=>'buttonlink'))?>
 	                </div>
